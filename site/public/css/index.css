@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+/* começo cabeçalho */
+#paiCabecalho {
+    background-color: #D0D0D0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+#filhoCabecalho {
+    background-color: #D0D0D0;
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgEsquerda {
+    background-color: #D0D0D0;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#imgLogo {
+    width: 15vw;
+    height: 8vh;
+}
+
+#botoesDireita {
+    background-color: #D0D0D0;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* fim do cabeçalho */
+
+/* começo do banner */
+#paiBanner {
+    background-color: #D0D0D0;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filhoBanner {
+    background-color: #D0D0D0;
+    width: 95%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bannerEsquerda {
+    background-color: #D0D0D0;
+    width: 50vw;
+    height: 20vh;
+}
+
+#imgBanner {
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50%;
+}
+
+#bannerTitulo1 {
+    font-size: 30px;
+}
+
+#bannerTitulo2 {
+    font-size: 35px;
+}
+
+#cadastroBanner {
+    width: 13vw;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #FF4500;
+    color: #ffffff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
