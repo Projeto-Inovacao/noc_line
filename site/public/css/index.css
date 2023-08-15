@@ -169,3 +169,77 @@
 }
 
 /* fim do banner */
+
+/* Começo do Contato */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background: rgb(2,35,61);
+    background: -moz-linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
+    background: linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02233d",endColorstr="#054f8e",GradientType=1); 
+}
+
+.tituloContato{
+    align-self: center;
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.divContato{
+    display: flex;
+    justify-content: space-between;
+}
+.boxContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    height: 40vh;
+}
+
+.logoNocLine{
+    width: 14vw;
+    height: 5vh;
+}
+
+.iconSocialMedia{
+    width: 3vw;
+    height: 5.5vh;
+}
+
+.boxBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloBox{
+    color: white;
+    font-size: 1.8vw;
+}
+.btnMenu{
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 1.5vw;
+}
+
+#btnAtivo{
+    color: #FF4500;
+    font-weight: 600;
+}
+
+.inputContato{
+    width: 16vw;
+    height: 5vh;
+    border-radius: 1vh;
+    background-color: #D0D0D0D9;
+    border: none;
+}
+
+#textAreaContato{
+    height: 16vh;
+}
+/* Fim do Contato */
