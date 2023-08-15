@@ -8,6 +8,7 @@
     <title>HOME</title>
 
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="js/botao.js"></script>
   </head>
 
   <body>
@@ -22,7 +23,9 @@
         <div id="botoesDireita">
           <button id="headerBotaoHome" onclick="home()">HOME</button>
           <button id="headerBotaoLogin" onclick="login()">LOGIN</button>
-          <button id="headerBotaoCadastro" onclick="cadastro()">CADASTRE-SE</button>
+          <button id="headerBotaoCadastro" onclick="cadastro()">
+            CADASTRE-SE
+          </button>
         </div>
       </div>
     </div>
@@ -44,77 +47,89 @@
     <div id="espaco" style="height: 200px; width: auto"></div>
 
     <!-- Começo do Contato -->
-    <div class="rodape">
-      <h1 class="tituloContato">Entre em Contato Conosco</h1>
-      <div class="divContato">
-        <div class="boxContato">
-          <img
-            src="assets/logo branca.png"
-            class="logoNocLine"
-            alt=""
-            srcset=""
-          />
-          <img
-            src="assets/instagram (1).png"
-            class="iconSocialMedia"
-            alt=""
-            srcset=""
-          />
-          <img
-            src="assets/facebook (1).png"
-            class="iconSocialMedia"
-            alt=""
-            srcset=""
-          />
-          <img
-            src="assets/linkedin (1).png"
-            class="iconSocialMedia"
-            alt=""
-            srcset=""
-          />
-          <img
-            src="assets/github.png"
-            class="iconSocialMedia"
-            alt=""
-            srcset=""
-          />
+    <div class="div_rodape">
+      <h1 class="titulo_contato">Entre em Contato Conosco</h1>
+      <div class="div_contato">
+        <div class="box_contato">
+          <a href="index.html">
+            <img
+              src="assets/logo branca.png"
+              class="img_logo"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <a href="https://www.instagram.com/"
+            ><img
+              src="assets/instagram (1).png"
+              class="icon_social_media"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <a href="https://www.facebook.com/"
+            ><img
+              src="assets/facebook (1).png"
+              class="icon_social_media"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <a href="https://br.linkedin.com/"
+            ><img
+              src="assets/linkedin (1).png"
+              class="icon_social_media"
+              alt=""
+              srcset=""
+            />
+          </a>
+          <a href="https://github.com/"
+            ><img
+              src="assets/github.png"
+              class="icon_social_media"
+              alt=""
+              srcset=""
+            />
+          </a>
         </div>
-        <div class="boxContato">
-          <h2 class="tituloBox">Menu</h2>
-          <div class="boxBtn">
-            <button onclick="home()" class="btnMenu" id="btnAtivo">Home</button>
-            <button onclick="home()" class="btnMenu">Login</button>
-            <button onclick="home()" class="btnMenu">Cadastro</button>
+        <div class="box_contato">
+          <h2 class="titulo_box">Menu</h2>
+          <div class="box_btn">
+            <button onclick="home()" class="btn_menu" id="btnAtivo">
+              Home
+            </button>
+            <button onclick="login()" class="btn_menu">Login</button>
+            <button onclick="cadastro()" class="btn_menu">Cadastro</button>
           </div>
         </div>
-        <div class="boxContato">
-          <h2 class="tituloBox">Fale Conosco</h2>
+        <div class="box_contato">
+          <h2 class="titulo_box">Fale Conosco</h2>
           <input
             type="text"
             name=""
             id=""
-            class="inputContato"
+            class="input_contato"
             placeholder="Nome:"
           />
           <input
             type="text"
             name=""
             id=""
-            class="inputContato"
+            class="input_contato"
             placeholder="Assunto:"
           />
           <textarea
             name=""
-            id="textAreaContato"
+            id="text_area_contato"
             cols="20"
             rows="5"
-            class="inputContato"
+            class="input_contato"
             placeholder="Mensagem:"
           ></textarea>
+          <button class="btn_enviar">Enviar</button>
         </div>
       </div>
     </div>
     <!-- Fim do Contato -->
-
   </body>
 </html>
