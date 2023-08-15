@@ -22,7 +22,7 @@
 
 #imgEsquerda {
     background-color: #D0D0D0;
-    width: 20vw;
+    width: 30vw;
     height: 10vh;
     display: flex;
     justify-content: start;
@@ -30,8 +30,8 @@
 }
 
 #imgLogo {
-    width: 14vw;
-    height: 7vh;
+    width: 15vw;
+    height: 8vh;
 }
 
 #botoesDireita {
@@ -45,7 +45,7 @@
 
 #headerBotaoLogin {
     background: rgba(255, 192, 203, 0);
-    width: 13vw;
+    width: 5vw;
     height: 5vh;
     border-radius: 20px;
     font-size: 30px;
@@ -55,11 +55,14 @@
     text-transform: uppercase;
     color: black;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerBotaoCadastro {
     background: rgba(255, 192, 203, 0);
-    width: 13vw;
+    width: 10vw;
     height: 5vh;
     border-radius: 20px;
     font-size: 30px;
@@ -69,11 +72,14 @@
     text-transform: uppercase;
     color: black;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerBotaoHome {
     background: rgba(255, 192, 203, 0);
-    width: 13vw;
+    width: 5vw;
     height: 5vh;
     border-radius: 20px;
     font-size: 30px;
@@ -83,6 +89,9 @@
     text-transform: uppercase;
     color: #FF4500;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerBotaoHome:hover {
@@ -140,10 +149,13 @@
 
 #bannerTitulo1 {
     font-size: 60px;
+    text-shadow: 0px 2px 5px grey;
 }
 
 #bannerTitulo2 {
     font-size: 70px;
+    color:  #553cbe;
+    text-shadow: 0px 2px 5px grey;
 }
 
 #cadastroBanner {
