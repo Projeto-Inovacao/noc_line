@@ -1,6 +1,10 @@
 * {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+body{
+    overflow-x: hidden;
+    background-color: #D0D0D0;
 }
 
 /* começo cabeçalho */
@@ -117,28 +121,30 @@
 /*Fim cabeçalho*/
 
 /*começo quadro de cadastro*/
-.div-paiDosQuadradados{
+.div-paiDosQuadrados{
+    background-color: #D0D0D0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 89vh;
+    height: 90vh;
+    width: 100vw;
 }
+
 .div-QuadradoCinza{
     background-color:  #D9D9D9;
     height: 80%;
-    width: 30%;
+    width: 40%;
    display: inline-block;
    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
    display: flex;
    justify-content: center;
-
-   
+   z-index: 999;
 }
 
 .div-QuadradoAzul{
     background-color:  #1b7ccb;
     height: 80%;
-    width: 25% ;
+    width: 35% ;
    display: inline-block;
    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
    display: flex;
@@ -146,6 +152,15 @@
    align-items: center; 
 }
 
+#efeitoEsquerda {
+    z-index: 0;
+    width: 20vw;
+    height: 40vh;
+    align-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+}
 
 .div-foto{
     display: flex;
@@ -156,12 +171,12 @@
 }
 
 .imagem-QuadroBranco{
-    height: 90%;
+    height: 100%;
 }
 
 #cadastro {
-    height: 80%;
-    width: 25v%;
+    height: 80vh;
+    width: 100vw;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -172,16 +187,18 @@
     margin-top: -58px;
     margin-left: 10px;
 }
+
 #bemVindo{
     margin-top: 8%;
     font-size:xxx-large;
     color: white;
-
+    font-weight: bold;
+    height: 11vh;
 }
 
 #inputNome {
     height: 8%;
-    width: 80%;
+    width: 90%;
     border-radius: 30px;
     border: none;
     padding: 15px;
@@ -194,7 +211,7 @@
 
 #inputEmail {
     height: 8%;
-    width: 80%;
+    width: 90%;
     border-radius: 30px;
     border: none;
     padding: 15px;
@@ -207,7 +224,7 @@
 
 #inputSenha {
     height: 8%;
-    width: 80%;
+    width: 90%;
     border-radius: 30px;
     border: none;
     padding: 15px;
@@ -220,27 +237,25 @@
 
 #inputSenhav2 {
     height: 8%;
-    width: 80%;
+    width: 90%;
     border-radius: 30px;
     border: none;
     padding: 15px;
     background: #F9F9F9;
     color: black;
-    font-size: 22 px;
+    font-size: 22px;
     box-shadow: 0px 10px 40px #00000056;
     box-sizing: border-box;
 }
-.check{
-font-size: larger;
-list-style: none;
-}
 
 .botaoCadastrar {
-    width: 35%;
+    width: 15vw;
+    height: 5vh;
     padding: 16px 0px;
     margin: 25px;
+    font-size: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     outline: none;
     font-weight: 700;
     text-transform: uppercase;
