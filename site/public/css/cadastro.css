@@ -125,41 +125,43 @@
 }
 .div-QuadradoCinza{
     background-color:  #D9D9D9;
-    height: 60vh;
-    width: 27vw;
+    height: 80%;
+    width: 30%;
    display: inline-block;
    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
+   display: flex;
+   justify-content: center;
 
    
 }
 
 .div-QuadradoAzul{
     background-color:  #1b7ccb;
-    height: 60vh;
-    width: 25vw;
+    height: 80%;
+    width: 25% ;
    display: inline-block;
    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25), 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
-
-    
+   display: flex;
+   justify-content: center;
+   align-items: center; 
 }
+
+
 .div-foto{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    width: 25vw;
-   
-  
+    height: 90%;
+    width: 30%;
 }
 
 .imagem-QuadroBranco{
-    height: 80%;
+    height: 90%;
 }
 
 #cadastro {
-    
-    width: 350px;
-    height: 530px;
+    height: 80%;
+    width: 25v%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -170,57 +172,71 @@
     margin-top: -58px;
     margin-left: 10px;
 }
+#bemVindo{
+    margin-top: 8%;
+    font-size:xxx-large;
+    color: white;
+
+}
 
 #inputNome {
-    width: 140%;
+    height: 8%;
+    width: 80%;
     border-radius: 30px;
     border: none;
     padding: 15px;
     background: #F9F9F9;
     color: black;
-    font-size: 15px;
+    font-size: 22px;
     box-shadow: 0px 10px 40px #00000056;
     box-sizing: border-box;
 }
 
 #inputEmail {
-    width: 140%;
+    height: 8%;
+    width: 80%;
     border-radius: 30px;
     border: none;
     padding: 15px;
     background: #F9F9F9;
     color: black;
-    font-size: 15px;
+    font-size: 22px;
     box-shadow: 0px 10px 40px #00000056;
     box-sizing: border-box;
 }
 
 #inputSenha {
-    width: 140%;
+    height: 8%;
+    width: 80%;
     border-radius: 30px;
     border: none;
     padding: 15px;
     background: #F9F9F9;
     color: black;
-    font-size: 15px;
+    font-size: 22px;
     box-shadow: 0px 10px 40px #00000056;
     box-sizing: border-box;
 }
 
 #inputSenhav2 {
-    width: 140%;
+    height: 8%;
+    width: 80%;
     border-radius: 30px;
     border: none;
     padding: 15px;
     background: #F9F9F9;
     color: black;
-    font-size: 15px;
+    font-size: 22 px;
     box-shadow: 0px 10px 40px #00000056;
     box-sizing: border-box;
 }
+.check{
+font-size: larger;
+list-style: none;
+}
 
 .botaoCadastrar {
-    width: 140%;
+    width: 35%;
     padding: 16px 0px;
     margin: 25px;
     border: none;
@@ -228,16 +244,10 @@
     outline: none;
     font-weight: 700;
     text-transform: uppercase;
-    background: slategray;
+    background-color: #FF4500;
     color: #ffffff;
     letter-spacing: 3px;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000056;
-}
-
-.div-QuadradoAzul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
