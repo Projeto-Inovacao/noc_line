@@ -121,7 +121,7 @@
 #paiBanner {
     background-color: #D0D0D0;
     width: 100%;
-    height: 60vh;
+    height: 57vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,12 +182,60 @@
 
 /* fim do banner */
 
+/* Começo do sobre nós  */
+.div-fotoFundo{
+    background: #054f8e;
+background: linear-gradient(0deg, #054f8e 10%, rgba(29,130,214,1) 57%, rgba(208,208,208,1) 95%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.txt-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    color: #FFFFFF;
+}
+.txt-sobre p{
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    width: 50vw;
+}
+.txt-sobre h1{
+    font-size: 83px;
+    text-align: center;
+    margin-bottom: 90px;
+    font-weight: bold;
+}
+.img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-sobre{
+   /* width: 90%; 
+   height: 65vh; */
+   width: 35vw;
+   height:55vh;
+}
+
+
+
+/* FIm do sobre nós
+ */
 /* Começo do Contato */
 .div_rodape{
     display: flex;
     flex-direction: column;
-    background: rgb(2,35,61);
-    background: -moz-linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
+    background: #02233d;
+    background: -moz-linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, #054f8e 100%);
     background: -webkit-linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
     background: linear-gradient(0deg, rgba(2,35,61,1) 0%, rgba(6,60,106,1) 53%, rgba(5,79,142,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02233d",endColorstr="#054f8e",GradientType=1); 
