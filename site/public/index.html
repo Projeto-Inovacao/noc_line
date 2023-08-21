@@ -1,142 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HOME</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="js/botao.js"></script>
-  </head>
+  <title>HOME</title>
 
-  <body>
-    <!-- começo do cabeçalho -->
-    <div id="paiCabecalho">
-      <div id="filhoCabecalho">
-        <div id="imgEsquerda">
-          <a href="./index.html">
-            <img id="imgLogo" src="./assets/logo preta.png" />
-          </a>
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="js/botao.js"></script>
+</head>
+
+<body>
+  <!-- começo do cabeçalho -->
+  <div id="paiCabecalho">
+    <div id="filhoCabecalho">
+      <div id="imgEsquerda">
+        <a href="./index.html">
+          <img id="imgLogo" src="./assets/logo preta.png" />
+        </a>
+      </div>
+      <div id="botoesDireita">
+        <button id="headerBotaoHome" onclick="home()">HOME</button>
+        <button id="headerBotaoLogin" onclick="login()">LOGIN</button>
+        <button id="headerBotaoCadastro" onclick="cadastro()">
+          CADASTRE-SE
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- fim do cabeçalho -->
+
+  <!-- começo do banner -->
+  <div id="paiBanner">
+    <div id="filhoBanner">
+      <div id="bannerEsquerda">
+        <h1 id="bannerTitulo1">Zere Acidentes Envolvendo</h1>
+        <h1 id="bannerTitulo2">Softwares CBTC A Partir de Agora!</h1>
+        <button id="cadastroBanner" onclick="cadastro()">Saiba Mais</button>
+      </div>
+      <img id="imgBanner" src="./assets/250-removebg-preview.png" />
+    </div>
+  </div>
+  <!-- fim do banner -->
+  <!-- Começo do sobre nós -->
+  <div class="div-fotoFundo">
+    <div class="img">
+      <img class="img-sobre"
+        src="assets/vecteezy_the-team-is-processing-analytical-data-on-the-dashboard-monitor_8584623-removebg-preview.png"
+        alt="">
+    </div>
+    <div class="txt-sobre">
+      <h1>Sobre Nós</h1>
+      <p>Somos uma empresa que é composta por 6 integrantes bem qualificados e unidos com o objetivo de acabar com os
+        acidentes envolvendo Softwares CBTC , monitorando componentes de hardware e sistemas operacionais .</p>
+    </div>
+  </div>
+  <!-- Fim do sobre nós -->
+
+  <!-- Inicio Apresentação Equipe  -->
+    <div class="div_conteudoEquipe">
+      <div class="div_TitCarrosel">
+        <h1 class="Titulo_carrosel">Conheça os membros  <br> da nossa equipe</h1>
+      </div>
+      <div class="div_carrosel">
+        <img src="assets/flechaA.png" id="flechaA" class="imgFlecha" onclick="Anterior()">
+        <div class="CardFunc" id="Card1">
+            <img class="ImgFunc" src="assets/anthony.jpeg" alt="">
+            <h1 class="NomeFunc">Anthony</h1>
         </div>
-        <div id="botoesDireita">
-          <button id="headerBotaoHome" onclick="home()">HOME</button>
-          <button id="headerBotaoLogin" onclick="login()">LOGIN</button>
-          <button id="headerBotaoCadastro" onclick="cadastro()">
-            CADASTRE-SE
+        <div class="CardFunc" id="Card2">
+            <img class="ImgFunc" src="assets/testeimg.png" alt="">
+           <h1 class="NomeFunc">Davi</h1>
+       </div>
+        <div class="CardFunc" id="Card3">
+             <img class="ImgFunc" src="assets/sanchez.jpeg" alt="">
+            <h1 class="NomeFunc">Gabriel Sanchez</h1>
+        </div>
+        <div class="CardFunc" id="Card4">
+             <img class="ImgFunc" src="assets/nunes.jpg" alt="">
+            <h1 class="NomeFunc">Gabriel Nunes</h1>
+        </div>
+        <div class="CardFunc" id="Card5">
+             <img class="ImgFunc" src="assets/maria.jpeg" alt="">
+            <h1 class="NomeFunc">Maria Paula</h1>
+        </div>
+        <div class="CardFunc" id="Card6">
+            <img class="ImgFunc" src="assets/testeimg.png" alt="">
+           <h1 class="NomeFunc">Yasmin</h1>
+       </div>
+       <img src="assets/flecha.png" id="flecha" alt=""  class="imgFlecha" onclick="Proximo()">
+    </div>
+    </div>
+  <!-- Fim Apresentação Equipe  -->
+
+  <!-- Começo do Contato -->
+  <div class="div_rodape">
+    <h1 class="titulo_contato">Entre em Contato Conosco</h1>
+    <div class="div_contato">
+      <div class="box_contato">
+        <a href="index.html">
+          <img src="assets/logo branca.png" class="img_logo" alt="" srcset="" />
+        </a>
+        <a href="https://www.instagram.com/"><img src="assets/instagram (1).png" class="icon_social_media" alt=""
+            srcset="" />
+        </a>
+        <a href="https://www.facebook.com/"><img src="assets/facebook (1).png" class="icon_social_media" alt=""
+            srcset="" />
+        </a>
+        <a href="https://br.linkedin.com/"><img src="assets/linkedin (1).png" class="icon_social_media" alt=""
+            srcset="" />
+        </a>
+        <a href="https://github.com/"><img src="assets/github.png" class="icon_social_media" alt="" srcset="" />
+        </a>
+      </div>
+      <div class="box_contato">
+        <h2 class="titulo_box">Menu</h2>
+        <div class="box_btn">
+          <button onclick="home()" class="btn_menu" id="btnAtivo">
+            Home
           </button>
+          <button onclick="login()" class="btn_menu">Login</button>
+          <button onclick="cadastro()" class="btn_menu">Cadastro</button>
         </div>
       </div>
+      <div class="box_contato">
+        <h2 class="titulo_box">Fale Conosco</h2>
+        <input type="text" name="" id="" class="input_contato" placeholder="Nome:" />
+        <input type="text" name="" id="" class="input_contato" placeholder="Assunto:" />
+        <textarea name="" id="text_area_contato" cols="20" rows="5" class="input_contato"
+          placeholder="Mensagem:"></textarea>
+        <button class="btn_enviar">Enviar</button>
+      </div>
     </div>
-    <!-- fim do cabeçalho -->
+  </div>
+  <!-- Fim do Contato -->
+</body>
 
-    <!-- começo do banner -->
-    <div id="paiBanner">
-      <div id="filhoBanner">
-        <div id="bannerEsquerda">
-          <h1 id="bannerTitulo1">Zere Acidentes Envolvendo</h1>
-          <h1 id="bannerTitulo2">Softwares CBTC A Partir de Agora!</h1>
-          <button id="cadastroBanner" onclick="cadastro()">Saiba Mais</button>
-        </div>
-        <img id="imgBanner" src="./assets/250-removebg-preview.png" />
-      </div>
-    </div>
-    <!-- fim do banner -->
-<!-- Começo do sobre nós -->
-<div class="div-fotoFundo">
-  <div class="img">
-  <img class="img-sobre" src="assets/vecteezy_the-team-is-processing-analytical-data-on-the-dashboard-monitor_8584623-removebg-preview.png" alt="">
-</div>
-  <div class="txt-sobre"><h1>Sobre Nós</h1><p>Somos uma empresa que é composta por 6 integrantes bem qualificados e unidos com o objetivo de acabar com os acidentes envolvendo Softwares CBTC , monitorando componentes de hardware e sistemas operacionais .</p></div>
-</div>
-<!-- Fim do sobre nós -->
-   
-
-    <!-- Começo do Contato -->
-    <div class="div_rodape">
-      <h1 class="titulo_contato">Entre em Contato Conosco</h1>
-      <div class="div_contato">
-        <div class="box_contato">
-          <a href="index.html">
-            <img
-              src="assets/logo branca.png"
-              class="img_logo"
-              alt=""
-              srcset=""
-            />
-          </a>
-          <a href="https://www.instagram.com/"
-            ><img
-              src="assets/instagram (1).png"
-              class="icon_social_media"
-              alt=""
-              srcset=""
-            />
-          </a>
-          <a href="https://www.facebook.com/"
-            ><img
-              src="assets/facebook (1).png"
-              class="icon_social_media"
-              alt=""
-              srcset=""
-            />
-          </a>
-          <a href="https://br.linkedin.com/"
-            ><img
-              src="assets/linkedin (1).png"
-              class="icon_social_media"
-              alt=""
-              srcset=""
-            />
-          </a>
-          <a href="https://github.com/"
-            ><img
-              src="assets/github.png"
-              class="icon_social_media"
-              alt=""
-              srcset=""
-            />
-          </a>
-        </div>
-        <div class="box_contato">
-          <h2 class="titulo_box">Menu</h2>
-          <div class="box_btn">
-            <button onclick="home()" class="btn_menu" id="btnAtivo">
-              Home
-            </button>
-            <button onclick="login()" class="btn_menu">Login</button>
-            <button onclick="cadastro()" class="btn_menu">Cadastro</button>
-          </div>
-        </div>
-        <div class="box_contato">
-          <h2 class="titulo_box">Fale Conosco</h2>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="input_contato"
-            placeholder="Nome:"
-          />
-          <input
-            type="text"
-            name=""
-            id=""
-            class="input_contato"
-            placeholder="Assunto:"
-          />
-          <textarea
-            name=""
-            id="text_area_contato"
-            cols="20"
-            rows="5"
-            class="input_contato"
-            placeholder="Mensagem:"
-          ></textarea>
-          <button class="btn_enviar">Enviar</button>
-        </div>
-      </div>
-    </div>
-    <!-- Fim do Contato -->
-  </body>
 </html>
+
+<script>
+  function Proximo() {
+      Card1.style.display = "none"
+      Card2.style.display = "none"
+      Card3.style.display = "none"
+
+      // flechaA.style.display = "block"
+      // flecha.style.display = "none"
+
+      Card4.style.display = "block"
+      Card5.style.display = "block"
+      Card6.style.display = "block"
+  }
+
+  function Anterior() {
+      Card1.style.display = "block"
+      Card2.style.display = "block"
+      Card3.style.display = "block"
+
+      // flechaA.style.display = "none"
+      // flecha.style.display = "block"
+
+      Card4.style.display = "none"
+      Card5.style.display = "none"
+      Card6.style.display = "none"
+  }
+</script>

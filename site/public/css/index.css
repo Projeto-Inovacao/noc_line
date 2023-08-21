@@ -185,7 +185,7 @@
 /* Começo do sobre nós  */
 .div-fotoFundo{
     background: #054f8e;
-background: linear-gradient(0deg, #054f8e 10%, rgba(29,130,214,1) 57%, rgba(208,208,208,1) 95%);
+    background: linear-gradient(0deg, #054f8e 10%, rgba(29,130,214,1) 57%, rgba(208,208,208,1) 95%);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -228,8 +228,77 @@ background: linear-gradient(0deg, #054f8e 10%, rgba(29,130,214,1) 57%, rgba(208,
 
 
 
-/* FIm do sobre nós
- */
+/* FIm do sobre nós*/
+
+/* Inicio Apresentação Equipe */
+.div_conteudoEquipe{
+    /* background-image: url(img/2.jpg); */
+    /* background: linear-gradient(180deg, rgba(5,90,157,1) 16%, rgba(1,35,62,1) 83%); */
+    background: #054f8e;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.div_TitCarrosel h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 100px;
+}
+
+.div_carrosel{
+    margin-top: 10vh;
+    width: 100%;
+    height: 70vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+}
+
+.CardFunc{
+    width: 40vh;
+    height: 40vh;
+    background-color: #D0D0D0;
+    border-radius: 10px;
+}
+
+.CardFunc:hover{
+    width: 45vh;
+    height: 45vh;
+    background-color: #bebebe;
+}
+
+#Card4, #Card5, #Card6{
+    display: none;
+}
+
+.ImgFunc{
+    margin-top: 3vh;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    /* border: 2px solid #000; */
+}
+
+.NomeFunc{
+    margin-top: 5vh;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.imgFlecha{
+    cursor: pointer;
+    width: 15vh;
+}
+
+/* Fim Apresentação Equipe */
+
 /* Começo do Contato */
 .div_rodape{
     display: flex;
