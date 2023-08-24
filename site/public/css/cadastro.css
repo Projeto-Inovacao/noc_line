@@ -99,25 +99,27 @@ body{
 }
 
 #headerBotaoHome:hover {
-    font-size: 27px;
+    font-size: 25px;
     border: none;
     color: #FF4500;
     cursor: pointer;
 }
 
 #headerBotaoCadastro:hover {
-    font-size: 27px;
+    font-size: 25px;
     border: none;
     color: black;
     cursor: pointer;
 }
 
 #headerBotaoLogin:hover {
-    font-size: 27px;
+    font-size: 25px;
     border: none;
     color: black;
     cursor: pointer;
 }
+
+/* fim do cabeçalho */
 /*Fim cabeçalho*/
 
 /*começo quadro de cadastro*/
