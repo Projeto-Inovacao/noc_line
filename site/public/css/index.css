@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* começo do cabeçalho */
+.paiCabecalho {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filhoCabecalho {
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.esquerdaCabecalho {
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.direitaCabecalho {
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pCabecalho {
+    font-size:  12px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.pCabecalho::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.pCabecalho::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.pCabecalho:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+#imgEsquerdaCabecalho {
+    width: 13vw;
+    height: 6vh;
+}
+
+#imgDireitaCabecalho {
+    width: 1vw;
+    height: 3vh;
+}
+/* fim do cabeçalho */
+
+/* começo do banner */
+.paiBanner {
+    display: flex;
+    width: 100%;
+    height: 450px; 
+    background-image: url(../assets/banner4.jpg);
+    background-size: 100%;
+}
+
+.divBoxTextoBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    margin-top: 9%;
+    margin-left: -2%;
+}
+
+.pTituloBanner{
+    display: flex;
+    justify-content: center;
+    width: 10   0%;
+    font-size: 38px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+.divBoxTextoBanner {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.textoBanner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}
+
+.divBoxBotaoBanner{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.botao1Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px #ffffff solid;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao2Banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao2Banner:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+  }
+
+  .botao1Banner:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+  }
+
+.botaoBanner {
+    width: 30%;
+    justify-content: space-around;
+    display: flex;
+}
+/* fim do banner */
