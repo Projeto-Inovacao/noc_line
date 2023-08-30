@@ -25,7 +25,7 @@
     height: 7vh;
     display: flex;
     align-items: center;
- 
+
 }
 
 .direitaCabecalho {
@@ -37,7 +37,7 @@
 }
 
 .pCabecalho {
-    font-size:  12px;
+    font-size: 12px;
     cursor: pointer;
     font-weight: bold;
     position: relative;
@@ -55,7 +55,7 @@
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-  }
+}
 
 .pCabecalho::before {
     content: '';
@@ -74,7 +74,7 @@
 .pCabecalho:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
 #imgEsquerdaCabecalho {
     width: 13vw;
@@ -85,18 +85,19 @@
     width: 1vw;
     height: 3vh;
 }
+
 /* fim do cabeçalho */
 
 /* começo do banner */
 .paiBanner {
     display: flex;
     width: 100%;
-    height: 450px; 
+    height: 450px;
     background-image: url(../assets/banner4.jpg);
     background-size: 100%;
 }
 
-.divBoxTextoBanner{
+.divBoxTextoBanner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,10 +106,10 @@
     margin-left: -2%;
 }
 
-.pTituloBanner{
+.pTituloBanner {
     display: flex;
     justify-content: center;
-    width: 10   0%;
+    width: 10 0%;
     font-size: 38px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -121,7 +122,7 @@
     width: 60%;
 }
 
-.textoBanner{
+.textoBanner {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -129,14 +130,14 @@
     font-size: 13px;
 }
 
-.divBoxBotaoBanner{
+.divBoxBotaoBanner {
     display: flex;
     justify-content: center;
     margin-top: 3%;
     width: 100%;
 }
 
-.botao1Banner{
+.botao1Banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +154,7 @@
     outline: none;
 }
 
-.botao2Banner{
+.botao2Banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,18 +176,103 @@
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     color: black;
     transform: translateY(-7px);
-  }
+}
 
-  .botao1Banner:hover {
+.botao1Banner:hover {
     background-color: #ffffff;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     color: black;
     transform: translateY(-7px);
-  }
+}
 
 .botaoBanner {
     width: 30%;
     justify-content: space-around;
     display: flex;
 }
+
 /* fim do banner */
+/* Começo do Entenda Contexto */
+.fundoEntenda {
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.paiEntenda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.textoEntenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.tituloEntenda {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+.divQuadrados {
+    margin-top: 5%;
+    background-color: white;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.QuadradoEsquerda{
+    
+    height: 45vh ;
+    width: 18%;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+.imagemQuadradoEntenda{
+    position: relative; /* Define a posição como relativa para que os elementos filhos posicionados sejam relativos a este container */
+  
+}
+.imagemQuadradoEntenda::before{
+  margin-top: 80%;
+  content: ""; /* Cria um pseudo-elemento vazio */
+  position: absolute; /* Define a posição como absoluta para sobrepor */
+  width: 100%;
+  height: 34%;
+  background-color: rgb(0, 0, 0, 0.8); /* Substitua pela cor desejada */
+  z-index: 99; /* Coloca o elemento pseudo na frente da imagem */
+}
+.imagemEntenda{
+    height: 45vh;
+    width: 100%;
+}
+.QuadradoMeio{
+    background-color: rgb(17, 16, 16);
+    height: 45vh ;
+    width: 18%;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+.QuadradoDireita{
+    background-color: rgb(20, 19, 19);
+    height: 45vh ;
+    width: 18%;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+.faixaPreta{
+    background: black;
+    height: 20vh;
+    width: 18%;
+    z-index: 99;
+    opacity: 0.2;
+    position: absolute;
+}
+.roda{
+    height: 20vh;
+}
