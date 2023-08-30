@@ -86,6 +86,44 @@
     height: 3vh;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    margin-left: -50px;
+    padding: 10px 10px;
+    z-index: 1;
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: 11px;
+    transform: translateY(11px);
+}
+
 /* fim do cabeçalho */
 
 /* começo do banner */
