@@ -342,6 +342,103 @@ a:hover {
 .roda{
     height: 20vh;
 }
+/* Fim do Entenda Contexto */
+
+/* Inicio Pq nos escolher*/
+
+.Div_PqNosEscolher {
+    background-image: url(../assets/pexels-photo-302428.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 39rem;
+    width: 100%;
+    height: 39rem;
+    z-index: 0;
+}
+
+.Div_filtro {
+    width: 100%;
+    height: 39rem;
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 999;
+}
+
+.Tit_PNE {
+    width: 100%;
+    height: 6rem;
+    color: white;
+    font-family: Inter;
+    font-size: 0.75rem;
+    text-align: center;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Tit_PNE h3 {
+    margin-top: 1rem;
+}
+
+.Cards_PNE {
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Cards_PNE .card {
+    width: 22rem;
+    height: 20rem;
+    background-color: #fff;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.card h3 {
+    margin-top: 1rem;
+}
+
+.card p {
+    text-align: center;
+    width: 18rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .Cards_PNE{
+        display: block;
+        /* margin-top: 5rem; */
+    }
+
+    .Div_PqNosEscolher {
+    width: 100%;
+    z-index: 0;
+    }
+
+    .card{
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+    }
+    
+    .Div_filtro {
+   
+    height: 78rem;
+
+    }
+}
+
+
+/* Fim Pq nos escolher*/
 
 /* começo do comece conosco */
 .paiComeceConosco {
