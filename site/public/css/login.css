@@ -1,0 +1,226 @@
+@media only screen{
+body{
+    margin: 0;
+    background-image: url(../assets/Rectangle\ 36.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+}
+
+.div_all{
+    background-color: #000000BF;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar_login{
+    padding: 2.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.texto_navbar{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.texto_navbar:hover{
+    color: #5a78c4;
+    transform: translate(5px)
+}
+
+.div_logo{
+    display: flex;
+    justify-content: center;
+    padding: 3.5rem;
+}
+
+.logo_login{
+    width: 25%;
+}
+
+.inputs_login{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 16.5rem;
+}
+
+.input_login{
+    padding: 1.3rem 1.3rem 1.3rem 3.5rem;
+    width: 16.5rem;
+    background-color: #43537DBD;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    color: white;
+}
+
+.input_login::placeholder{
+    color: white;
+}
+
+.btn_login{
+    padding: 1.3rem;
+    width: 21rem;
+    background-color: #5A78C4;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.btn_login:hover{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    color: black;
+    cursor: pointer;
+    /* transform: translateY(5px); */
+    transform: scale(1.02);
+}
+
+footer{
+    padding: 3.4rem;
+    display: flex;
+}
+
+.span_copyright{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    color: white;
+}
+
+.wrapper img {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+}
+
+/* responsive */
+@media (min-width: 400px) and (max-width: 900px){
+    body{
+        margin: 0;
+        background-image: url(Rectangle\ 36.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+    }
+    
+    .div_all{
+        background-color: #000000BF;
+        height: 100%;
+    }
+    
+    .navbar_login{
+        padding: 3rem;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .texto_navbar{
+        font-size: 0.5rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .texto_navbar:hover{
+        color: #5a78c4;
+        transform: translate(5px)
+    }
+    
+    .div_logo{
+        display: flex;
+        justify-content: center;
+        padding: 3.5rem;
+    }
+    
+    .logo_login{
+        width: 70%;
+    }
+    
+    .inputs_login{
+        padding: 5rem 10rem 10rem 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+    }
+    
+    .input_login{
+        padding: 0.6rem 0.6rem 0.6rem 2rem;
+        width: 12rem;
+        background-color: #43537DBD;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    .input_login::placeholder{
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    .btn_login{
+        padding: 0.8rem;
+        width: 14.5rem;
+        background-color: #5A78C4;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    .btn_login:hover{
+        background-color: hsla(0, 0%, 100%, 0.5);
+        color: black;
+        cursor: pointer;
+        /* transform: translateY(5px); */
+        transform: scale(1.02);
+    }
+    
+    footer{
+        padding: 1.5rem;
+        display: flex;
+    }
+    
+    .span_copyright{
+        font-size: 0.5rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    .material-symbols-outlined{
+        width: 1.3rem;
+        height: 1rem;
+    }
+    
+    .wrapper {
+        position: relative;
+        color: white;
+    }
+    
+    .wrapper img {
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+    }
+    }
+    
