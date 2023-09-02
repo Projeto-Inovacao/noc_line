@@ -1,16 +1,10 @@
 @media only screen{
 body{
     margin: 0;
-    background-image: url(../assets/Rectangle\ 36.png);
+    background-image: url(../assets/bannerLoginV4.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
-}
-
-.div_all{
-    background-color: #000000BF;
-    height: 100%;
-    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar_login{
@@ -118,7 +112,7 @@ footer{
         background-image: url(Rectangle\ 36.png);
         background-repeat: no-repeat;
         background-size: cover;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     .div_all{
