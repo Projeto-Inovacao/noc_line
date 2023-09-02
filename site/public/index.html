@@ -20,13 +20,13 @@
 
             <div class="direitaCabecalho">
                 <div class="pCabecalho">
-                    <p>HOME</p>
+                    <a href="index.html">HOME</a>
                 </div>
                 <div class="pCabecalho">
-                    <p>CADASTRO</p>
+                    <a href="cadastro.html">CADASTRO</a>
                 </div>
                 <div class="pCabecalho">
-                    <p>LOGIN</p>
+                    <a href="login.html">LOGIN</a>
                 </div>
                 <div class="dropdown">
                     <img id="imgDireitaCabecalho" src="./assets/menu-aberto.png">
@@ -86,6 +86,7 @@
                 </div>
                 <div class="subtituloEntenda">
                     <p>Entenda o nosso contexto</p>
+                    <div class="linhaPreta"></div>
 
                 </div>
             </div>
@@ -93,11 +94,15 @@
                 <div class="QuadradoEsquerda">
                     <div class="imagemEntenda">
 
-                        <div class="faixapreta" id="myBox">
+                        <div class="faixapreta">
+                            <div class="expanding-div">
+                                <p class="hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus, molestias, exercitationem sequi molestiae numquam aliquam esse, velit accusantium sunt id quo? Delectus iure fugit numquam! Aspernatur aperiam id rerum.</p>
+                            </div>
                             <div class="filhofaixa">
 
+
                                 <p>VIEW DETAILS</p>
-                                <button id="toggleButton">SAIBA MAIS</button>
+                                <button onclick="quadraEsquerdo()">SAIBA MAIS</button>
 
                             </div>
 
@@ -110,10 +115,13 @@
                 <div class="QuadradoMeio">
                     <div class="imagemEntenda">
                         <div class="faixapreta">
+                            <div class="expanding-divM">
+                                <p class="hidden-textM">Este é o texto que estava escondido.</p>
+                            </div>
                             <div class="filhofaixa">
 
                                 <p>VIEW DETAILS</p>
-                                <button>SAIBA MAIS</button>
+                                <button onclick="quadraMeio()">SAIBA MAIS</button>
 
                             </div>
                         </div>
@@ -122,10 +130,13 @@
                 <div class="QuadradoDireita">
                     <div class="imagemEntenda">
                         <div class="faixapreta">
+                            <div class="expanding-divD">
+                                <p class="hidden-textD">Este é o texto que estava escondido.</p>
+                            </div>
                             <div class="filhofaixa">
 
                                 <p>VIEW DETAILS</p>
-                                <button>SAIBA MAIS</button>
+                                <button onclick="quadraDireito()">SAIBA MAIS</button>
 
                             </div>
                         </div>
@@ -142,10 +153,10 @@
     <div class="roda">
 
     </div>
-
+    <!-- fim do entenda nosso contexto -->
     <!-- Inicio Pq nos escolher  -->
 
-    <!-- Fim  Pq nos escolher -->
+
 
     <div class="Div_PqNosEscolher">
         <div class="Div_filtro">
@@ -185,7 +196,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Fim  Pq nos escolher -->
     <!-- comece conosco -->
 
     <div class="paiComeceConosco">
@@ -205,14 +216,36 @@
 
 </html>
 <script>
-    const box = document.getElementById("myBox");
-    const button = document.getElementById("toggleButton");
+    var isExpanded = false;   //Esta variável será usada para controlar o estado da expansão do conteúdo da div.
 
-    button.addEventListener("click", () => {
-        box.classList.toggle("expanded");
-    });
+    function quadraEsquerdo() {
+        const expandingDiv = document.querySelector('.expanding-div'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
+        isExpanded = !isExpanded;
 
-    box.addEventListener("click", () => {
-        box.classList.remove("expanded");
-    });
+        if (isExpanded) {
+            expandingDiv.style.height = '0';
+        } else {
+            expandingDiv.style.height = expandingDiv.scrollHeight + 'px';
+        }
+    }
+    function quadraMeio() {
+        const expandingDiv = document.querySelector('.expanding-divM'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
+        isExpanded = !isExpanded;
+
+        if (isExpanded) {
+            expandingDiv.style.height = '0';
+        } else {
+            expandingDiv.style.height = expandingDiv.scrollHeight + 'px';
+        }
+    }
+    function quadraDireito() {
+        const expandingDiv = document.querySelector('.expanding-divD'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
+        isExpanded = !isExpanded;
+
+        if (isExpanded) {
+            expandingDiv.style.height = '0';
+        } else {
+            expandingDiv.style.height = expandingDiv.scrollHeight + 'px';
+        }
+    }
 </script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .expanding-div {
+            width: 200px;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .hidden-text {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .expand-button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="expand-button" onclick="toggleText()">Expandir/Esconder</button>
+        <div class="expanding-div">
+            <p class="hidden-text">Este é o texto que estava escondido.</p>
+        </div>
+    </div>
+
+    <script>
+        let isExpanded = false;
+
+        function toggleText() {
+            const expandingDiv = document.querySelector('.expanding-div');
+            isExpanded = !isExpanded;
+
+            if (isExpanded) {
+                expandingDiv.style.height = 'auto';
+            } else {
+                expandingDiv.style.height = '0';
+            }
+        }
+    </script>
+</body>
+</html>S

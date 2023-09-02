@@ -267,6 +267,14 @@ a:hover {
     padding-top: 1%;
     border-color: black;
 }
+.linhaPreta{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    height: 0.4vh;
+    background-color: black;
+}
 
 .divQuadrados {
     margin-top: 5%;
@@ -287,6 +295,22 @@ a:hover {
     justify-content: center;
   
 }
+.expanding-div {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    
+}
+
+.hidden-text {
+    padding: 10px;
+    margin: 0;
+}
 .imagemEntenda{
     height: 45vh;
     width: 100%;
@@ -299,6 +323,22 @@ a:hover {
     width: 18%;
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
+.expanding-divM {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    
+}
+
+.hidden-textM {
+    padding: 10px;
+    margin: 0;
+}
 .QuadradoDireita{
     background-image: url(../assets/pexels-photo-4070450.webp);
     background-size: 100%;
@@ -306,14 +346,32 @@ a:hover {
     width: 18%;
     box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
+.expanding-divD {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    
+}
+
+.hidden-textD {
+    padding: 10px;
+    margin: 0;
+}
 
 .faixapreta{
+    position: relative;
+    top: 78%;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.8);
     height: 10vh;
-    transition: all 0.3s ease-in-out;
-    transform-origin: top left;
+   
 }
+
 .expanded {
     height: 200px;
   }
@@ -330,6 +388,7 @@ a:hover {
     width: 40%;
     
 }
+
 .filhofaixa{
     display: flex;
     align-items: center;
@@ -337,6 +396,7 @@ a:hover {
     flex-direction: column;
     height: 8vh;
     width: 100%;
+    
 }
 
 .roda{
