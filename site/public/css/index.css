@@ -538,6 +538,166 @@ a:hover {
 
 /* Fim Pq nos escolher*/
 
+
+
+/* Começo do carrosel  */
+
+
+
+.all{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 59vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+}
+#titulo-equipe{
+    height: 30vh;
+}
+.titulo{
+    width: 75%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ffffffaf solid 1px;
+    -webkit-box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
+    -moz-box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
+    box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
+    margin-bottom: 100px;
+    z-index: 999;
+   
+}
+.titulo h1{
+font-size: 70px;
+margin-top: 0;
+}
+.titulo h4{
+    font-size: 40px;
+    margin-bottom: 7px;
+    }
+.slider{
+    margin: 0 auto;
+width: 64%;
+height: 100%;
+overflow: hidden;
+}
+.slides{
+ width: 700px;
+ height: 700px;
+ display: flex;
+
+
+}
+
+.slides input{
+    display: none
+}
+.slide{
+display: flex;
+flex-direction: row;
+position: relative;
+width: 250%;
+
+}
+.slide .img-membro{
+    background-image: url("../assets/anthony.jpeg");
+    height:50vh;
+    transition: 2s;
+    width: 510px;
+    z-index: 0;
+    position: relative;
+}
+#maria{
+    background-image: url("./assets/maria.jpeg");
+
+}
+.filter{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.552);
+    z-index: 999;
+    bottom: -1px;
+    width: 100%;
+    height: 10vh;
+}
+.filter h2{
+    color: #FFFF;
+    text-align: center;
+    font-size:xx-large;
+}
+.filter p{
+    color: #FFFF;
+    text-align: center;
+    font-size: 24px;
+}
+
+.espaco{
+    width: 200px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 664px;
+}
+.manual-btn{
+    border: 2px solid #101010;
+    width: 5px;
+    height: 10px;
+    padding: 5px;
+    border-radius: 32px;
+    cursor: pointer;
+   margin-left: 40px;
+   background-color: #ffffff2b;
+   transition: 1s;
+}
+.manual-btn:hover{
+  background-color: #060462;
+}
+
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -250%;
+}
+.navigation-auto div{
+border: 2px solid #0e045a;
+padding: 5px;
+border-radius: 32px;
+cursor: pointer;
+margin-left: 40px;
+transition: 1s;
+width: 5px;
+    height: 10px;
+}
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 661px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 664px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #070707;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #050505;
+}
+/* Final do carrosel */
+
 /* começo do comece conosco */
 .paiComeceConosco {
     display: flex;

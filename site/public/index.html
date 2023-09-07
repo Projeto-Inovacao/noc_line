@@ -196,6 +196,174 @@
         </div>
     </div>
     <!-- Fim  Pq nos escolher -->
+
+<!-- Começo do carrosel -->
+<div class="all" id="titulo-equipe">
+<div class="titulo">
+    <h4>Profissionais capacitados</h4>
+    <h1>CONHEÇA NOSSA EQUIPE</h1>
+</div>
+</div>
+<div class="all">
+    
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio Buttons  -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+
+            <!-- Fim do Radio Buttons  -->
+
+            <!-- Slides Imagens -->
+            <div class="slide first">
+                <div class="membro">
+                    <div class="img-membro">
+                        <div class="filter" class="nome">
+                            <h2>Anthony Bento</h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="espaco"></div>
+                <div class="membro">
+                    <div class="img-membro" id="maria">
+                        <div class="filter" class="nome">
+                            <h2>Maria Paula </h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="espaco"></div>
+                <div class="membro" id="sanchez">
+                    <div class="img-membro">
+                        <div class="filter" class="nome">
+                            <h2>Gabriel Sanchez</h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="slide ">
+
+                <div class="membro">
+                    <div class="img-membro">
+                        <div class="filter" class="nome">
+                            <h2>Gabriel Nunes</h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="espaco"></div>
+                <div class="membro">
+                    <div class="img-membro">
+                        <div class="filter" class="nome">
+                            <h2>Yasmin Kakoi</h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="espaco"></div>
+                <div class="membro">
+                    <div class="img-membro">
+                        <div class="filter" class="nome">
+                            <h2>Davi Lee Soo</h2>
+                            <p>Analista</p>
+                        </div>
+                        <div class="filter" class="redes" style="display: none;">
+                            <img class="img-redes" src="./assets/instagram-branco.png" alt="">
+                            <img class="img-redes" src="./assets/linkedin-branco.png" alt="">
+                            <img class="img-redes" src="./assets/facebook-branco.png" alt="">
+                            <img class="img-redes" src="./assets/github-branco.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim Slides Imagens -->
+                <!-- Navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+
+
+                </div>
+
+                <!-- Fim Navigation auto -->
+
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- Final do carrosel -->
+
+
+
+
+
+
+
+
+
+
     <!-- comece conosco -->
 
     <div class="paiComeceConosco">
@@ -247,4 +415,30 @@
             expandingDiv.style.height = expandingDiv.scrollHeight + 'px';
         }
     }
+
+
+
+
+
+
+
+    // Comeco do carrosel 
+
+    let contador = 1
+    document.getElementById("radio1").checked = true;
+    setInterval(function () {
+        nextImage()
+    }, 5000)
+
+    function nextImage() {
+        contador++
+
+        if (contador > 2) {
+            contador = 1
+        }
+
+
+        document.getElementById("radio" + contador).checked = true
+    }
+    // Final do carrosel
 </script>
