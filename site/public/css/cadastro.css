@@ -3,7 +3,8 @@ body{
     margin: 0;
     background-image: url(../assets/bannerLoginV4.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    height: 1080px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,14 +31,33 @@ body{
 .div_logo{
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
+    width: 100%;
 }
 
 .logo_login{
+    position: relative;
+    bottom: 1.5rem;
     width: 25%;
 }
 
+.div_login{
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inputs_login{
+    /* padding: 2.5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 30rem; */
+}
+
+.inputs_login_esquerda, .inputs_login_direita{
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -60,6 +80,15 @@ body{
     color: white;
 }
 
+.input_size{
+    width: 8rem;
+}
+
+.input_mini{
+    padding: 1.3rem 1.3rem 1.3rem 3.5rem;
+    width: 3rem;
+}
+
 .btn_login{
     padding: 1.3rem;
     width: 21rem;
@@ -78,7 +107,7 @@ body{
 }
 
 footer{
-    padding: 1rem;
+    padding-top: 12rem;
     display: flex;
 }
 
@@ -93,16 +122,32 @@ footer{
     height: 1.5rem;
 }
 
-.wrapper {
+.input {
     position: relative;
     color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.wrapper img {
+.input img {
     position: absolute;
-    left: 15px;
-    bottom: 15px;
+    left: 0.8rem;
+    bottom: 1rem;
 }
+
+#logo_estado{
+    position: absolute;
+    left: 14.3rem;
+}
+
+#logo_complemento{
+    position: absolute;
+    left: 9.4rem;
+}
+
 }
 
 /* responsive */
@@ -151,7 +196,7 @@ footer{
         width: 50%;
     }
     
-    .inputs_login{
+    .inputs_login_esquerda{
         padding: 3rem 10rem 5rem 10rem;
         display: flex;
         flex-direction: column;
@@ -211,12 +256,12 @@ footer{
         height: 1rem;
     }
     
-    .wrapper {
+    .input {
         position: relative;
         color: white;
     }
     
-    .wrapper img {
+    .input img {
         position: absolute;
         left: 8px;
         bottom: 8px;

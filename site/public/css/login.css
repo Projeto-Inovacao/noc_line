@@ -3,7 +3,8 @@ body{
     margin: 0;
     background-image: url(../assets/bannerLoginV4.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    height: 1080px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
 }
 
@@ -30,15 +31,17 @@ body{
 .div_logo{
     display: flex;
     justify-content: center;
-    padding: 3.5rem;
+    width: 100%;
 }
 
 .logo_login{
+    position: relative;
+    top: 5.5rem;
     width: 25%;
 }
 
 .inputs_login{
-    padding: 2.5rem;
+    padding: 12.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,7 +81,7 @@ body{
 }
 
 footer{
-    padding: 3.4rem;
+    padding-top: 8.3rem;
     display: flex;
 }
 
