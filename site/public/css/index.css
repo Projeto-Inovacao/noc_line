@@ -234,17 +234,19 @@ a:hover {
 /* Começo do Entenda Contexto */
 .fundoEntenda {
     background-color: white;
-    height: 45rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 .paiEntenda{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    height: 50vh;
 }
+
 .textoEntenda{
     display: flex;
     flex-direction: column;
@@ -254,23 +256,24 @@ a:hover {
 }
 
 .tituloEntenda {
-    padding-top: 10%;
     display: flex;
     justify-content: center;
-    height: 20vh;
+    height: 5vh;
 }
 
 .tituloEntenda p{
     color: black;
     font-size: large;
+    height: 5vh;
 }
+
 .subtituloEntenda{
-    padding-top: 1%;
     border-color: black;
 }
+
 .linhaPreta{
     position: relative;
-    top: 40%;
+    top: 60%;
     left: 10%;
     width: 80%;
     height: 0.4vh;
@@ -337,7 +340,6 @@ a:hover {
     position: absolute;
     bottom: 100%;
     left: 0;
-    
 }
 
 .hidden-text {
@@ -450,7 +452,7 @@ a:hover {
 
 .Tit_PNE {
     width: 100%;
-    height: 6rem;
+    height: 10rem;
     color: white;
     font-family: Inter;
     font-size: 0.75rem;
@@ -465,9 +467,8 @@ a:hover {
 }
 
 .titulo h1 {
-    font-size: 40px;
-    margin-top: -20px;
-    }
+    font-size: 30px;
+}
 
 .Tit_PNE h1 {
     margin-top: 1rem;
@@ -482,6 +483,7 @@ a:hover {
 .Cards_PNE {
     width: 100%;
     height: 31rem;
+    margin-top: -2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -495,6 +497,7 @@ a:hover {
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    border-radius: 30px;
 }
 
 .card img {
@@ -509,8 +512,9 @@ a:hover {
 
 .card p {
     text-align: center;
-    width: 18rem;
+    width: 16rem;
     margin-top: 1rem;
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -535,8 +539,6 @@ a:hover {
 
     }
 }
-
-
 /* Fim Pq nos escolher*/
 
 
@@ -785,36 +787,42 @@ width: 115.4%;
     transform: translateY(-7px);
 }
 /* fim do comece conosco */
+
 /* começo do rodape */
 .maps{
     z-index: 0;
-    height: 20rem;
+    height: 19rem;
     width: 100%;   
+    object-fit: cover;
 }
+
 .feedbackForm {
-    
     display: flex;
     flex-direction: column;
     background-color: white;
     position: absolute;
     z-index: 99;
     right: 4%;
-    height: 26.4rem;
+    height: 25.5rem;
     width: 24rem;
     bottom: 3rem;
     justify-content: space-around;
     padding: 70px;
-    box-shadow: 7px 5px 7px 2px rgb(95, 92, 92);
+    box-shadow: 7px 5px 7px 2px rgb(168, 168, 168);
 }
+
 .feedbackForm input{
     border-bottom: 2px solid black;
     border-top: white;
     border-right: white;
     border-left: white;
+    outline: none;
 }  
+
 .feedbackForm ::placeholder{
     padding-left: 0.5rem;
 }
+
  .enviarMensagem {
     color:white;
     font-size: 15px;
@@ -825,26 +833,34 @@ width: 115.4%;
     z-index:3;
     height:2rem;
     width: 10rem;
-    box-shadow: 2px 2px 2px 2px rgb(95, 92, 92);
     text-transform: uppercase;
-
-
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 } 
+
+.enviarMensagem:hover {
+    box-shadow: 0px 5px 10px rgb(138, 138, 138);
+    transform: translateY(-7px);
+}
+
 .rodape {
     position: relative;
     display: flex;
     width: 100%;
     height: 18rem;
 }
+
 .faleConosco {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 40px;
-    
 }
+
 .links {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -852,7 +868,8 @@ width: 115.4%;
     padding: 50px;
     text-decoration: none;
 }
-a{
+
+a {
     color:black;
     text-decoration: none;
 }
@@ -861,20 +878,21 @@ a{
     justify-content: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top: 2px solid gray;
-    
 }
+
 .copyright span{
     justify-content: space-around;
     padding: 23px;
 }
+
 #copy{
     color:#B4B4B4;
     margin: 4px;
 }
 
 .divIcon {
-    
     display: flex;
     padding:20px;
 }
@@ -886,16 +904,23 @@ a{
     padding: 2px;
 }
 
- .copyright #nocline {
-    height:4rem;
+.iconFace {
+    display: flex;
+    width: 2rem;
+    height: 2.3rem;
+    padding: 2px;
+    margin-top: -2px;
+}
 
+ .copyright #nocline {
+    height:3rem;
 } 
+
 /* fim do rodape */
 /* parte mobile entenda contexto */
 @media only screen and (max-width: 600px) {
     .fundoEntenda {
     height: 30 rem;
-   
 }
 
         
@@ -917,7 +942,6 @@ a{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-  
 }
 
 #idDetalhes {
@@ -933,12 +957,11 @@ a{
     background-size: 100%;
     height: 45vh ;
     width: 90%;
-  
 }
 
 
 .hidden-text {
-    font-size: 2.1vh;
+    font-size: 2.0vh;
    
 }
 
