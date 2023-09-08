@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- para importar ícones do google -->
 
 </head>
 
@@ -378,6 +380,59 @@
                 <button id="botaoComeceConosco">CADASTRE-SE</button>
             </div>
         </div>
+        <!-- começo do rodape -->
+    </div>
+    <div class="footer" >
+        <img src="assets/googleMaps.png" alt="" class="maps">
+          
+        <div class="rodape">
+            <div class="faleConosco">
+                <span id="faleConosco">FALE CONOSCO</span>
+                <span><br>
+                    <span class="material-symbols-outlined">location_on</span>
+                    Rua Haddock Lobo 595
+                </span><br>
+                <span>
+                    <span class="material-symbols-outlined">call</span>
+                    (11) 5455-9494
+                </span><br>
+                <span>
+                    <img src="assets/email.png" alt="">
+                    nocline@freshdesk.com
+                </span>
+            </div><br>
+            <div class="links">
+                <span><a href="">Home</a></span><br>
+                <span><a href="">Login</a></span><br>
+                <span><a href="">Cadastro</a></span><br>
+                <span><a href="">Nossa Equipe</a></span><br>
+                <span><a href="">Nossos serviços</a></span><br>
+                <span><a href="">Área de atuação</a></span><br>
+            </div>
+            <div class="feedbackForm">
+                <h2>Feedback Form</h2>
+                <input type="text" id="NomeInput" placeholder="Nome">
+                
+                <input type="text" id="EmailInput" placeholder="Email">
+                
+                <input type="text" id="inputTelefone" placeholder="Telefone">
+                
+                <input type="text" id="inputMensagem" placeholder="Mensagem">
+                
+                <button onclick="" class="enviarMensagem">Enviar Mensagem</button> 
+                </div> 
+        </div>
+        
+        <div class="copyright">
+            <span id="copy">2023 copyright by nocline©</span>
+            <div class="divIcon">
+                <a href="" class="icon"><img src="assets/linkedinIcon.png" alt="linkedin"></a>
+                <a href="" class="icon"><img src="assets/InstagramIcon.png" alt="instagram"></a>
+                <a href="" class="icon"><img src="assets/twitterIcon.png" alt="twitter"></a>
+                <a href="" class="icon"><img src="assets/facebookIcon.png" alt="facebook"></a>
+            </div>
+            <img src="assets/nocLineLogo.png" alt="logotipo" id="nocline">
+        </div>
     </div>
 </body>
 
@@ -441,4 +496,7 @@
         document.getElementById("radio" + contador).checked = true
     }
     // Final do carrosel
+    
+    
+    
 </script>
