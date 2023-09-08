@@ -389,7 +389,6 @@ a:hover {
     position: absolute;
     bottom: 100%;
     left: 0;
-    
 }
 
 .hidden-textD {
@@ -441,21 +440,14 @@ a:hover {
 /* Fim do Entenda Contexto */
 
 /* Inicio Pq nos escolher*/
-
 .Div_PqNosEscolher {
-    background-image: url(../assets/pexels-photo-302428.webp);
+    background-image: url(../assets/banner45.jpg);
     background-repeat: no-repeat;
     background-size: 100% 39rem;
     width: 100%;
     height: 39rem;
     z-index: 0;
-}
-
-.Div_filtro {
-    width: 100%;
-    height: 39rem;
-    background-color: rgba(0, 0, 0, 0.637);
-    z-index: 999;
+    position: relative;
 }
 
 .Tit_PNE {
@@ -474,8 +466,19 @@ a:hover {
     top: 5%;
 }
 
+.titulo h1 {
+    font-size: 40px;
+    margin-top: -20px;
+    }
+
+.Tit_PNE h1 {
+    margin-top: 1rem;
+    margin-top: 40px;
+}
+
 .Tit_PNE h3 {
     margin-top: 1rem;
+    margin-top: 20px;
 }
 
 .Cards_PNE {
@@ -541,113 +544,129 @@ a:hover {
 
 
 /* Começo do carrosel  */
-
-
-
 .all{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 59vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-flex-direction: column;
+    flex-direction: column;
 }
+
 #titulo-equipe{
     height: 30vh;
 }
+
 .titulo{
     width: 75%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: #ffffffaf solid 1px;
+    background-color: white;
     -webkit-box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
     -moz-box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
     box-shadow: 7px 7px 34px 3px rgba(0,0,0,0.57);
     margin-bottom: 100px;
     z-index: 999;
-   
+    position: absolute;
 }
-.titulo h1{
-font-size: 70px;
-margin-top: 0;
-}
-.titulo h4{
-    font-size: 40px;
+
+.titulo h4 {
+    font-size: 20px;
     margin-bottom: 7px;
     }
+
 .slider{
     margin: 0 auto;
-width: 64%;
-height: 100%;
-overflow: hidden;
+    width: 64%;
+    height: 100%;
+    overflow: hidden;
 }
+
 .slides{
  width: 700px;
  height: 700px;
  display: flex;
-
-
 }
 
 .slides input{
     display: none
 }
+
 .slide{
 display: flex;
 flex-direction: row;
 position: relative;
-width: 250%;
-
+width: 115.4%;
 }
+
 .slide .img-membro{
     background-image: url("../assets/anthony.jpeg");
-    height:50vh;
+    background-size: cover;
+    height: 60vh;
     transition: 2s;
-    width: 510px;
+    width: 20vw;
     z-index: 0;
     position: relative;
 }
+
 #maria{
     background-image: url("./assets/maria.jpeg");
-
 }
+
 .filter{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.552);
     z-index: 999;
     bottom: -1px;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .filter h2{
     color: #FFFF;
     text-align: center;
-    font-size:xx-large;
+    font-size:x-large;
 }
+
 .filter p{
     color: #FFFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .espaco{
-    width: 200px;
+    width: 20px;
 }
 
 .manual-navigation{
     position: absolute;
     width: 400px;
-    margin-top: 660px;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 664px;
+    margin-left: 182px;
 }
+
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 182px;
+}
+
 .manual-btn{
     border: 2px solid #101010;
     width: 5px;
@@ -655,46 +674,46 @@ width: 250%;
     padding: 5px;
     border-radius: 32px;
     cursor: pointer;
-   margin-left: 40px;
-   background-color: #ffffff2b;
-   transition: 1s;
+    margin-left: 40px;
+    background-color: #ffffff2b;
+    transition: 1s;
 }
+
+
+
 .manual-btn:hover{
   background-color: #060462;
 }
 
-
-
 #radio1:checked ~ .first{
     margin-left: 0;
 }
+
 #radio2:checked ~ .first{
-    margin-left: -250%;
+    margin-left: -115.4%;
 }
 .navigation-auto div{
-border: 2px solid #0e045a;
-padding: 5px;
-border-radius: 32px;
-cursor: pointer;
-margin-left: 40px;
-transition: 1s;
-width: 5px;
+    border: 2px solid #0e045a;
+    padding: 5px;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 1s;
+    width: 5px;
     height: 10px;
 }
-.navigation-auto{
-    position: absolute;
-    width: 400px;
-    margin-top: 661px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 664px;
-}
+
 #radio1:checked ~.navigation-auto .auto-btn1{
     background-color: #070707;
 }
+
 #radio2:checked ~.navigation-auto .auto-btn2{
     background-color: #050505;
+}
+
+#espaco-final {
+    width: 10px;
+    background-color: white;
 }
 /* Final do carrosel */
 
