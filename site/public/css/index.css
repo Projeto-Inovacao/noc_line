@@ -234,7 +234,7 @@ a:hover {
 /* Começo do Entenda Contexto */
 .fundoEntenda {
     background-color: white;
-    height: 55vh;
+    height: 45rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -434,9 +434,7 @@ a:hover {
     
 }
 
-.roda{
-    height: 20vh;
-}
+
 /* Fim do Entenda Contexto */
 
 /* Inicio Pq nos escolher*/
@@ -893,3 +891,80 @@ a{
 
 } 
 /* fim do rodape */
+/* parte mobile entenda contexto */
+@media only screen and (max-width: 600px) {
+    .fundoEntenda {
+    height: 30 rem;
+   
+}
+
+        
+.textoEntenda{
+    height: 9rem;
+}
+
+.tituloEntenda {
+    height: 9rem;
+}
+
+.subtituloEntenda{
+    font-size: 1.3rem;
+}
+
+
+.divQuadrados {
+    height: 100rem;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  
+}
+
+#idDetalhes {
+    font-size: 5vw;
+   
+}
+
+#botaoSaibaMais {
+    width: 30vw;
+}
+
+.QuadradoEsquerda{
+    background-size: 100%;
+    height: 45vh ;
+    width: 90%;
+  
+}
+
+
+.hidden-text {
+    font-size: 2.1vh;
+   
+}
+
+
+.QuadradoMeio{
+    background-size: 120%;
+    height: 45vh ;
+    width: 90%;
+}
+
+
+.hidden-textM {
+    font-size: 2.1vh;
+    
+}
+.QuadradoDireita{
+    background-size: 100%;
+    height: 45vh ;
+    width: 90%;
+
+}
+
+.hidden-textD {
+    font-size: 2.1vh;
+    
+}
+
+}
+/* fim mobile */
