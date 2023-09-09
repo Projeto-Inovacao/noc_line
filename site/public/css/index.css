@@ -338,8 +338,9 @@ a {
 }
 
 .QuadradoEsquerda{
-    background-image: url(../assets/pexels-photo-13413984.webp);
-    background-size: 100%;
+    background-image: url(../assets/trabalhadores-de-escritorio-usando-graficos-de-financas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 45vh ;
     width: 18%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -368,9 +369,10 @@ a {
     width: 100%;
 }
 .QuadradoMeio{
-    background-image: url(../assets/pexels-christina-morillo2.jpg);
+    background-image: url(../assets/conceito-de-gerenciamento-de-dados-de-computacao-em-nuvem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     height: 45vh ;
     width: 18%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -392,8 +394,9 @@ a {
     margin: 0;
 }
 .QuadradoDireita{
-    background-image: url(../assets/pexels-photo-4070450.webp);
-    background-size: 100%;
+    background-image: url(../assets/pexels-fauxels-3184357.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     height: 45vh ;
     width: 18%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;

@@ -425,16 +425,16 @@
 
     function quadraEsquerdo() {
         const expandingDiv = document.querySelector('.expanding-div'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
-        isExpanded = !isExpanded;
+        isExpanded = !isExpanded; //Esta linha alterna o valor da variável isExpanded
 
         if (isExpanded) {
-            expandingDiv.style.height = '0';
+            expandingDiv.style.height = '0'; // Se isExpanded for true após a alteração, isso significa que o elemento deve ser contraído
         } else {
-            expandingDiv.style.height = expandingDiv.scrollHeight + 'px';
+            expandingDiv.style.height = expandingDiv.scrollHeight + 'px'; //Se isExpanded for false,  deve ser expandido. A altura do elemento HTML é definida como a altura total do conteúdo dentro dele.
         }
     }
     function quadraMeio() {
-        const expandingDiv = document.querySelector('.expanding-divM'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
+        const expandingDiv = document.querySelector('.expanding-divM'); 
         isExpanded = !isExpanded;
 
         if (isExpanded) {
@@ -444,7 +444,7 @@
         }
     }
     function quadraDireito() {
-        const expandingDiv = document.querySelector('.expanding-divD'); // usando document.querySelector(). O elemento selecionado é a div que contém o texto oculto que queremos expandir e esconder.
+        const expandingDiv = document.querySelector('.expanding-divD');
         isExpanded = !isExpanded;
 
         if (isExpanded) {
