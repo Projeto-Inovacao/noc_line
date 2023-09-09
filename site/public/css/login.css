@@ -36,8 +36,10 @@ body{
 
 .logo_login{
     position: relative;
-    top: 5.5rem;
-    width: 25%;
+    top:80%;
+    margin-left: 18%;
+    width: 60%;
+    height: 100%;
 }
 
 .inputs_login{
