@@ -81,6 +81,10 @@
     height: 6vh;
 }
 
+#imgEsquerdaCabecalho,#nocline:hover{
+    cursor: pointer;
+}
+
 #imgDireitaCabecalho {
     width: 1vw;
     height: 3vh;
@@ -216,11 +220,15 @@ a {
     transform: translateY(-7px);
 }
 
-.botao1Banner:hover {
+.botao1Banner:hover{
     background-color: #ffffff;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     color: black;
     transform: translateY(-7px);
+}
+
+.botao1Banner:hover .texto, .botao2Banner:hover .texto, #botaoComeceConosco:hover .texto{
+    color: black;
 }
 
 .botaoBanner {
@@ -305,7 +313,7 @@ a {
     justify-content: space-evenly;
 }
 
-#idDetalhes {
+.idDetalhes {
     font-size: 13px;
     position: relative;
     top: -20%;
@@ -313,7 +321,7 @@ a {
     color: white;
 }
 
-#botaoSaibaMais {
+.botaoSaibaMais {
     border: none;
     display: flex;
     align-items: center;
@@ -330,7 +338,7 @@ a {
     outline: none;
 }
 
-#botaoSaibaMais:hover {
+.botaoSaibaMais:hover {
     background-color: #ffffff;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     color: black;
@@ -559,34 +567,66 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+    .Div_filtro{
+        height: 53rem !important;
+    }
+
     .Cards_PNE{
-        display: block;
-        /* margin-top: 5rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .Cards_PNE .card{
+        margin: auto;
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .card img{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    .card h3{
+        font-size: 1rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+    }
+
+    .Tit_PNE{
+        height: auto;
+        font-size: 0.45rem;
     }
 
     .Tit_PNE h1 {
-        margin-top: 1rem;
-        margin-top: 40px;
-        color: black;
+        margin: auto;
+        color: rgb(255, 255, 255);
         position: relative;
-        top: -80%;
     }
     
     .Tit_PNE h3 {
         margin-top: 1rem;
         margin-top: 20px;
-        color: black;
+        color: rgb(255, 255, 255);
         position: relative;
         top: -70%;
+        font-size: 0.69rem;
     }
 
     .Div_PqNosEscolher {
-        background-image: none;
-        background-size: 100% 39rem;
+        background-image: url(../assets/banner45.jpg);
+        background-size: cover;
         width: 100%;
-        height: 40rem;
+        height: 61rem !important;
         z-index: 0;
         position: relative;
+        margin-top: 13%;
     }
 
     .Div_PqNosEscolher {
@@ -996,8 +1036,13 @@ a {
 
 /* parte mobile entenda como trabalhamos */
 @media only screen and (max-width: 600px) {
+.imagemEntenda{
+        height: 35vh;
+        width: 100%;
+    }
+
 .fundoEntenda {
-    height: 90rem;
+    height: 45rem;
 }
         
 .textoEntenda{
@@ -1006,7 +1051,7 @@ a {
 
 .tituloEntenda {
     position: relative;
-    top: -110%;
+    top: 80%;
 }
 
 .tituloEntenda p{
@@ -1015,7 +1060,7 @@ a {
 
 .subtituloEntenda{
     position: relative;
-    top: -130%;
+    top: 65%;
 }
 
 .subtituloEntenda p{
@@ -1023,27 +1068,36 @@ a {
 }
 
 .divQuadrados {
-    height: 100rem;
+    height: 80vh;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     position: relative;
-    top: -10%;
+    background-color: transparent;
+    margin: 0;
+    top: 6.5%;
 }
 
 
-#idDetalhes {
-    font-size: 5vw;
+.idDetalhes {
+    font-size: 2.5vw;
+    top: -5%;
+    margin-bottom: 3%;
 }
 
-#botaoSaibaMais {
+.botaoSaibaMais {
     width: 30vw;
+    height: 3vh;
+}
+
+.txtDetalhes{
+    font-size: 0.5rem;
 }
 
 .QuadradoEsquerda{
     background-size: 100%;
-    height: 45vh ;
-    width: 90%;
+    height: 25%;
+    width: 65%;
 }
 
 
@@ -1053,8 +1107,8 @@ a {
 
 .QuadradoMeio{
     background-size: 120%;
-    height: 40vh ;
-    width: 90%;
+    height: 25%;
+    width: 65%;
 }
 
 .hidden-textM {
@@ -1063,8 +1117,8 @@ a {
 
 .QuadradoDireita{
     background-size: 100%;
-    height: 27.8vh ;
-    width: 90%;
+    height: 25%;
+    width: 65%;
 
 }
 
@@ -1074,20 +1128,18 @@ a {
 
 
 .faixapreta{
-    top: 61.5%;
-   
+    top: 33.5%;
+    height: 8.5vh;
 }
 .faixapretaM{
-    
-    top: 49%;
-   
+    top: 33.5%;
+    height: 8.5vh;
 }
 
 .faixapretaD{
-    top: 60.5%;
-   
+    top: 33.5%;
+    height: 8.5vh;
 }
-
 
 
 
@@ -1097,33 +1149,54 @@ a {
 /* banner mobile */
 @media only screen and (max-width: 600px) {
 .paiBanner {
-    height: 40rem;
+    height: 18rem !important;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .divBoxTextoBanner {
-    height: 3rem;
+    margin: 0;
+    height: 100%;
+    margin-left: 1rem !important;
 }
 
 .pTituloBanner {
-    font-size: 11px;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .textoBanner {
-    font-size: 5px;
+    font-size: 0.55rem;
+    text-align: center;
+}
+
+.divBoxBotaoBanner{
+    height: 10%;
+}
+
+.botaoBanner{
+    width: 55%;
+    height: auto;
 }
 
 .botao1Banner {
-    width: 10vw;
-    height: 1rem;
-    font-size: 4px;
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
     border: 2px #ffffff solid;
 }
 
+span .texto{
+    width: 100%;
+}
+
 .botao2Banner {
-    width: 10vw;
-    height: 1rem;
-    font-size: 5px;
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
 }
 }
 
@@ -1145,7 +1218,8 @@ a {
 }
 
 .paiCabecalho {
-    width: 90%;
+    width: 95%;
+    margin: auto;
 }
 
 .filhoCabecalho {
