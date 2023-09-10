@@ -310,6 +310,7 @@ a {
     position: relative;
     top: -20%;
     font-weight: bold;
+    color: white;
 }
 
 #botaoSaibaMais {
@@ -393,6 +394,7 @@ a {
 .hidden-textM {
     padding: 10px;
     margin: 0;
+    color: white;
 }
 .QuadradoDireita{
     background-image: url(../assets/pexels-fauxels-3184357.jpg);
@@ -416,9 +418,28 @@ a {
 .hidden-textD {
     padding: 10px;
     margin: 0;
+    color: white;
 }
 
 .faixapreta{
+    position: relative;
+    top: 67%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.faixapretaM{
+    position: relative;
+    top: 67%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.faixapretaD{
     position: relative;
     top: 67%;
     width: 100%;
@@ -1010,6 +1031,7 @@ a {
     top: -10%;
 }
 
+
 #idDetalhes {
     font-size: 5vw;
 }
@@ -1031,7 +1053,7 @@ a {
 
 .QuadradoMeio{
     background-size: 120%;
-    height: 45vh ;
+    height: 40vh ;
     width: 90%;
 }
 
@@ -1041,7 +1063,7 @@ a {
 
 .QuadradoDireita{
     background-size: 100%;
-    height: 45vh ;
+    height: 27.8vh ;
     width: 90%;
 
 }
@@ -1050,38 +1072,24 @@ a {
     font-size: 2.1vh;
 }
 
+
 .faixapreta{
-    position: relative;
     top: 61.5%;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.8);
-    height: 15vh;
-    display: flex;
-    align-items: center;
+   
 }
-
-.faixapreta p{
-    color: white;
-    align-self: center;
-    margin-bottom: 3%;
-}
-
-.faixapreta button{
-    color: white;
-    border-color: white;
-    background-color: black;
-    width: 40%;
-}
-
-.filhofaixa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 8vh;
-    width: 100%;
+.faixapretaM{
     
+    top: 49%;
+   
 }
+
+.faixapretaD{
+    top: 60.5%;
+   
+}
+
+
+
 
 }
 /* fim mobile */
