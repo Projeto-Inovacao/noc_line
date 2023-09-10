@@ -355,7 +355,7 @@ a {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     display: flex;
     justify-content: center;
-  
+
 }
 .expanding-div {
     width: 100%;
@@ -661,12 +661,12 @@ a {
 }
 
 #titulo-equipe{
-    height: 30vh;
+    height: 10vh;
 }
 
 .titulo{
-    width: 75%;
-    height: 20vh;
+    width: 75% ;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -674,9 +674,9 @@ a {
     border: #ffffffaf solid 1px;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     z-index: 999;
-    position: absolute;
+    position: relative;
 }
 
 .titulo h4 {
@@ -747,7 +747,7 @@ a {
     font-size: 20px;
 }
 
-.espaco{
+.espaco {
     width: 20px;
 }
 
