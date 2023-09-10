@@ -901,6 +901,8 @@ a {
 /* fim do comece conosco */
 
 /* começo do rodape */
+/* redefinindo as tag */
+/* começo do rodape */
 .maps{
     z-index: 0;
     height: 19rem;
@@ -917,7 +919,7 @@ a {
     right: 4%;
     height: 25.5rem;
     width: 24rem;
-    bottom: 3rem;
+    bottom: -156.9rem;
     justify-content: space-around;
     padding: 70px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -957,9 +959,12 @@ a {
     box-shadow: 0px 5px 10px rgb(138, 138, 138);
     transform: translateY(-7px);
 }
+.footer_contatos{
+    display:flex;
+
+}
 
 .rodape {
-    position: relative;
     display: flex;
     width: 100%;
     height: 18rem;
@@ -985,28 +990,10 @@ a {
     color:black;
     text-decoration: none;
 }
-
-.copyright {
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid gray;
-}
-
-.copyright span{
-    justify-content: space-around;
-    padding: 23px;
-}
-
-#copy{
-    color:#B4B4B4;
-    margin: 4px;
-}
-
 .divIcon {
     display: flex;
     padding:20px;
+    
 }
 
 .icon {
@@ -1014,8 +1001,11 @@ a {
     width: 2rem;
     height: 2rem;
     padding: 2px;
+    
 }
-
+.links a:hover {
+    font-size: 12px;
+}
 .iconFace {
     display: flex;
     width: 2rem;
@@ -1023,14 +1013,24 @@ a {
     padding: 2px;
     margin-top: -2px;
 }
+.copyright {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid gray;
+}
+.copyright span{
+    justify-content: space-around;
+    padding: 23px;
+}
 
- .copyright #nocline {
+#copy{
+    color:#B4B4B4;
+    
+}
+.copyright #nocline {
     height:3rem;
 } 
-
-.links a:hover {
-    font-size: 12px;
-}
 
 /* fim do rodape */
 
@@ -1301,137 +1301,88 @@ span .texto{
 /* fim do cabeçalho mobile */
 
 /* mobile rodapé */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
     .maps{
-        z-index: 0;
-        height: 12rem;
-        width: 100%;   
-        object-fit: cover;
-    }
-    
-    .feedbackForm {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        position: absolute;
-        z-index: 99;
-        right: 8%;
-        top: -69%;
-        height: 12rem;
-        width: 9rem;
-        bottom: 3rem;
-        justify-content: space-around;
-        padding: 70px;
-        font-size: 13px;
-    }
-    
-    .feedbackForm input{
-        border-bottom: 2px solid black;
-        border-top: white;
-        border-right: white;
-        border-left: white;
-        outline: none;
-        width: 9rem;
-        align-self: center;
-    }  
-    
-    .feedbackForm ::placeholder{
-        padding-left: 0.5rem;
-    }
-    
-     .enviarMensagem {
-        color:white;
-        font-size: 15px;
-        background-color: black;
-        position:absolute;
-        top: 17.8rem;
-        left:9rem;
-        z-index:3;
-        height:2rem;
-        width: 10rem;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 30px;
-        transition: all 0.3s ease 0s;
-        cursor: pointer;
-        outline: none;
-    } 
-    
-    .rodape {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 18rem;
-    }
-    
-    .faleConosco {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 40px;
-    }
-    
-    .links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        text-decoration: none;
-    }
-    
-    a {
-        color:black;
-        text-decoration: none;
-    }
-    
-    .copyright {
-        justify-content: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 2px solid gray;
-        height: 0.5rem;
-    }
-    
-    .copyright span{
-        justify-content: space-around;
-        padding: 23px;
-    }
-    
-    #copy{
-        color:#B4B4B4;
-        margin: 4px;
-        font-size: 7px;
-    }
-    
-    .divIcon {
-        display: flex;
-        padding:20px;
-    }
-    
-    .icon {
-        display: flex;
-        width: 1.5rem;
-        height: 1rem;
-        padding: 2px;
-    }
-    
-    .iconFace {
-        display: flex;
-        width: 1.3rem;
-        height: 1.3rem;
-        padding: 2px;
-        margin-top: -2px;
-    }
-    
-     .copyright #nocline {
-        height: 2.3rem;
-    } 
-    
-    .links a:hover {
-        font-size: 12px;
-    }
-    
-    /* fim do rodape */
+       width: 103%;
+   }
+   .rodape{
+       display:flex;
+       flex-direction: column;
+       width:100%
+   }
+   .footer_contatos{
+       display: flex;
+       flex-direction: row;
+   }
+   #email{
+    display: flex;
+    flex-direction: row;
+   }
+   
+   .links{
+       display:flex;
+       justify-content: center;
+       align-items: start;
+       padding: 15px;
+       
+   }
+    .paiCopyright {
+        padding:40px;
+        display:flex;
+        justify-content: end;
+
+   }
+   #copy{
+    padding:0%;
+    font-size: small;
+   } 
+   .feedbackForm {
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+       position: absolute;
+       z-index: 99;
+       right: 17%;
+       height: 10.1rem;
+       width: 30%;
+       bottom: -229.35rem;
+       justify-content: space-around;
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+   }
+   .feedbackForm input{
+       border-bottom: 2px solid black;
+       border-top: white;
+       border-right: white;
+       border-left: white;
+       outline: none;
+       margin:7px;
+   }  
+   
+   .feedbackForm ::placeholder{
+       padding-left: 0.5rem;
+   }
+   
+    .enviarMensagem {
+       color:white;
+       font-size: 15px;
+       background-color: black;
+       position:absolute;
+       top: 16.4rem;
+       left:5rem;
+       z-index:3;
+       height:2rem;
+       width: 7rem;
+       text-transform: uppercase;
+       border: none;
+       border-radius: 30px;
+       transition: all 0.3s ease 0s;
+       cursor: pointer;
+       outline: none;
+   } 
+   
+   .enviarMensagem:hover {
+       box-shadow: 0px 5px 10px rgb(138, 138, 138);
+       transform: translateY(-7px);
+   }
 }
+    /* fim do rodape */
