@@ -4,7 +4,6 @@ body{
     background-image: url(../assets/bannerLoginV4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1080px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
 }
 
@@ -32,18 +31,19 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 2.5rem 0 0 0;
 }
 
 .logo_login{
-    position: relative;
-    top:80%;
-    margin-left: 18%;
-    width: 60%;
-    height: 100%;
+    width: 25%;
+}
+
+.logo_login:hover{
+    cursor: pointer;
 }
 
 .inputs_login{
-    padding: 12.8rem;
+    padding: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,24 +66,30 @@ body{
 }
 
 .btn_login{
-    padding: 1.3rem;
+    padding: 0.7rem;
     width: 21rem;
     background-color: #5A78C4;
     border-radius: 20px;
     border: none;
     color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    border: solid 3px #5A78C4;
 }
 
 .btn_login:hover{
-    background-color: hsla(0, 0%, 100%, 0.5);
-    color: black;
+    background: white;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    color: #5A78C4;
     cursor: pointer;
-    /* transform: translateY(5px); */
+    border: solid 3px #5A78C4;
     transform: scale(1.02);
 }
 
 footer{
-    padding-top: 8.3rem;
+    padding-top: 2rem;
     display: flex;
 }
 
@@ -109,20 +115,16 @@ footer{
 @media (min-width: 400px) and (max-width: 900px){
     body{
         margin: 0;
-        background-image: url(Rectangle\ 36.png);
+        background-image: url(../assets/bannerLoginV4.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
-    }
-    
-    .div_all{
-        background-color: #000000BF;
-        height: 100%;
+        /* background-size: cover; */
+        background-position: 72%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     .navbar_login{
-        padding: 3rem;
-        width: 80%;
+        padding: 5rem 0;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         margin: auto;
@@ -130,7 +132,7 @@ footer{
     }
     
     .texto_navbar{
-        font-size: 0.5rem;
+        font-size: 0.55rem;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
@@ -144,7 +146,7 @@ footer{
     .div_logo{
         display: flex;
         justify-content: center;
-        padding: 3.5rem;
+        padding-top: 7.5rem;
     }
     
     .logo_login{
@@ -190,17 +192,16 @@ footer{
         background-color: hsla(0, 0%, 100%, 0.5);
         color: black;
         cursor: pointer;
-        /* transform: translateY(5px); */
         transform: scale(1.02);
     }
     
     footer{
-        padding: 1.5rem;
+        padding: 4.2rem;
         display: flex;
     }
     
     .span_copyright{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         text-align: center;
         width: 100%;
         color: white;
