@@ -17,6 +17,8 @@ body{
     align-items: center;
 }
 
+
+
 .texto_navbar{
     text-decoration: none;
     color: white;
@@ -36,8 +38,9 @@ body{
 
 .logo_login{
     position: relative;
-    bottom: 1.5rem;
-    width: 25%;
+    margin-left: 18%;
+    width: 60%;
+    height: 100%;
 }
 
 .div_login{

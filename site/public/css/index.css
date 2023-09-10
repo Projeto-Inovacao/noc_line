@@ -368,6 +368,7 @@ a {
     height: 45vh;
     width: 100%;
 }
+
 .QuadradoMeio{
     background-image: url(../assets/conceito-de-gerenciamento-de-dados-de-computacao-em-nuvem.jpg);
     background-repeat: no-repeat;
@@ -425,7 +426,6 @@ a {
     height: 15vh;
     display: flex;
     align-items: center;
-   
 }
 
 .expanded {
@@ -543,8 +543,34 @@ a {
         /* margin-top: 5rem; */
     }
 
+    .Tit_PNE h1 {
+        margin-top: 1rem;
+        margin-top: 40px;
+        color: black;
+        position: relative;
+        top: -80%;
+    }
+    
+    .Tit_PNE h3 {
+        margin-top: 1rem;
+        margin-top: 20px;
+        color: black;
+        position: relative;
+        top: -70%;
+    }
+
+    .Div_PqNosEscolher {
+        background-image: none;
+        background-size: 100% 39rem;
+        width: 100%;
+        height: 40rem;
+        z-index: 0;
+        position: relative;
+    }
+
     .Div_PqNosEscolher {
     width: 100%;
+    height: 85rem;
     z-index: 0;
     }
 
@@ -595,7 +621,7 @@ a {
 .titulo h4 {
     font-size: 20px;
     margin-bottom: 7px;
-    }
+}
 
 .slider{
     margin: 0 auto;
@@ -615,10 +641,10 @@ a {
 }
 
 .slide{
-display: flex;
-flex-direction: row;
-position: relative;
-width: 115.4%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 115.4%;
 }
 
 .slide .img-membro{
@@ -946,36 +972,46 @@ a {
 }
 
 /* fim do rodape */
-/* parte mobile entenda contexto */
-@media only screen and (max-width: 600px) {
-    .fundoEntenda {
-    height: 30 rem;
-}
 
+/* parte mobile entenda como trabalhamos */
+@media only screen and (max-width: 600px) {
+.fundoEntenda {
+    height: 90rem;
+}
         
 .textoEntenda{
     height: 9rem;
 }
 
 .tituloEntenda {
-    height: 9rem;
+    position: relative;
+    top: -110%;
+}
+
+.tituloEntenda p{
+    font-size: 13px;
 }
 
 .subtituloEntenda{
-    font-size: 1.3rem;
+    position: relative;
+    top: -130%;
 }
 
+.subtituloEntenda p{
+    font-size: 11px;
+}
 
 .divQuadrados {
     height: 100rem;
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    position: relative;
+    top: -10%;
 }
 
 #idDetalhes {
     font-size: 5vw;
-   
 }
 
 #botaoSaibaMais {
@@ -991,9 +1027,7 @@ a {
 
 .hidden-text {
     font-size: 2.0vh;
-   
 }
-
 
 .QuadradoMeio{
     background-size: 120%;
@@ -1001,11 +1035,10 @@ a {
     width: 90%;
 }
 
-
 .hidden-textM {
-    font-size: 2.1vh;
-    
+    font-size: 2.1vh;   
 }
+
 .QuadradoDireita{
     background-size: 100%;
     height: 45vh ;
@@ -1015,8 +1048,308 @@ a {
 
 .hidden-textD {
     font-size: 2.1vh;
+}
+
+.faixapreta{
+    position: relative;
+    top: 61.5%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.faixapreta p{
+    color: white;
+    align-self: center;
+    margin-bottom: 3%;
+}
+
+.faixapreta button{
+    color: white;
+    border-color: white;
+    background-color: black;
+    width: 40%;
+}
+
+.filhofaixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 8vh;
+    width: 100%;
     
 }
 
 }
 /* fim mobile */
+
+/* banner mobile */
+@media only screen and (max-width: 600px) {
+.paiBanner {
+    height: 40rem;
+    background-repeat: no-repeat;
+}
+
+.divBoxTextoBanner {
+    height: 3rem;
+}
+
+.pTituloBanner {
+    font-size: 11px;
+}
+
+.textoBanner {
+    font-size: 5px;
+}
+
+.botao1Banner {
+    width: 10vw;
+    height: 1rem;
+    font-size: 4px;
+    border: 2px #ffffff solid;
+}
+
+.botao2Banner {
+    width: 10vw;
+    height: 1rem;
+    font-size: 5px;
+}
+}
+
+.titulo{
+    width: 80%;
+    height: 10vh;
+}
+
+.titulo h1 {
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+/* fim do banner mobile */
+
+/* mobile cabeçalho */
+@media only screen and (max-width: 600px) {
+.paiBanner {
+    height: 10rem;
+}
+
+.paiCabecalho {
+    width: 90%;
+}
+
+.filhoCabecalho {
+    width: 100%;
+    height: 7vh;
+}
+
+.esquerdaCabecalho {
+    width: 6vw;
+    height: 1vh;
+}
+
+.direitaCabecalho {
+    width: 50vw;
+    height: 7vh;
+}
+
+#imgEsquerdaCabecalho {
+    width: 30vw;
+    height: 3.2vh;
+}
+
+#imgDireitaCabecalho {
+    width: 3vw;
+    height: 2vh;
+}
+
+.filhoComeceConosco {
+    width: 80%;
+    height: 32%;
+
+}
+
+.boxTextoComeceConosco {
+    width: 60%;
+    margin-top: 10%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pComeceConosco {
+    position: relative;
+    right: 25%;
+    width: 280px;
+    font-size: 20px;
+}
+
+#textoComece {
+    text-align: center;
+    color: white;
+}
+
+#botaoComeceConosco {
+    border-radius: 30px;
+    width: 15vw;
+    height: 3vh;
+    font-size: 7px;
+    position: relative;
+    margin-top: 1px;
+}
+
+#botaoComeceConosco a {
+    color: white;
+}
+
+#botaoComeceConosco a:hover {
+    color: black;
+}
+
+#botaoComeceConosco:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+}
+}
+/* fim do cabeçalho mobile */
+
+/* mobile rodapé */
+@media only screen and (max-width: 600px) {
+    .maps{
+        z-index: 0;
+        height: 12rem;
+        width: 100%;   
+        object-fit: cover;
+    }
+    
+    .feedbackForm {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        z-index: 99;
+        right: 8%;
+        top: -69%;
+        height: 12rem;
+        width: 9rem;
+        bottom: 3rem;
+        justify-content: space-around;
+        padding: 70px;
+        font-size: 13px;
+    }
+    
+    .feedbackForm input{
+        border-bottom: 2px solid black;
+        border-top: white;
+        border-right: white;
+        border-left: white;
+        outline: none;
+        width: 9rem;
+        align-self: center;
+    }  
+    
+    .feedbackForm ::placeholder{
+        padding-left: 0.5rem;
+    }
+    
+     .enviarMensagem {
+        color:white;
+        font-size: 15px;
+        background-color: black;
+        position:absolute;
+        top: 17.8rem;
+        left:9rem;
+        z-index:3;
+        height:2rem;
+        width: 10rem;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    } 
+    
+    .rodape {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 18rem;
+    }
+    
+    .faleConosco {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 40px;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        text-decoration: none;
+    }
+    
+    a {
+        color:black;
+        text-decoration: none;
+    }
+    
+    .copyright {
+        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid gray;
+        height: 0.5rem;
+    }
+    
+    .copyright span{
+        justify-content: space-around;
+        padding: 23px;
+    }
+    
+    #copy{
+        color:#B4B4B4;
+        margin: 4px;
+        font-size: 7px;
+    }
+    
+    .divIcon {
+        display: flex;
+        padding:20px;
+    }
+    
+    .icon {
+        display: flex;
+        width: 1.5rem;
+        height: 1rem;
+        padding: 2px;
+    }
+    
+    .iconFace {
+        display: flex;
+        width: 1.3rem;
+        height: 1.3rem;
+        padding: 2px;
+        margin-top: -2px;
+    }
+    
+     .copyright #nocline {
+        height: 2.3rem;
+    } 
+    
+    .links a:hover {
+        font-size: 12px;
+    }
+    
+    /* fim do rodape */
+}
