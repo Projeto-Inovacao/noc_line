@@ -566,6 +566,7 @@ a {
     font-size: 15px;
 }
 
+/* responsivo pq nos escolher */
 @media only screen and (max-width: 600px) {
     .Div_filtro{
         height: 53rem !important;
@@ -586,17 +587,17 @@ a {
     }
 
     .card img{
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-top: 1.5rem;
     }
 
     .card h3{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .card p{
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .Tit_PNE{
@@ -1102,7 +1103,8 @@ a {
 
 
 .hidden-text {
-    font-size: 2.0vh;
+    font-size:  0.7rem;
+    margin: 0 !important;
 }
 
 .QuadradoMeio{
@@ -1112,7 +1114,7 @@ a {
 }
 
 .hidden-textM {
-    font-size: 2.1vh;   
+    font-size:  0.7rem;  
 }
 
 .QuadradoDireita{
@@ -1123,7 +1125,7 @@ a {
 }
 
 .hidden-textD {
-    font-size: 2.1vh;
+    font-size: 0.7rem;
 }
 
 
@@ -1217,6 +1219,12 @@ span .texto{
     height: 10rem;
 }
 
+.paiComeceConosco{
+    height: 200px;
+    background-size: cover;
+    background-position: 100%;
+}
+
 .paiCabecalho {
     width: 95%;
     margin: auto;
@@ -1249,7 +1257,7 @@ span .texto{
 
 .filhoComeceConosco {
     width: 80%;
-    height: 32%;
+    height: 85%;
 
 }
 
@@ -1280,7 +1288,7 @@ span .texto{
     height: 3vh;
     font-size: 7px;
     position: relative;
-    margin-top: 1px;
+    margin-top: 8px;
 }
 
 #botaoComeceConosco a {
@@ -1303,16 +1311,18 @@ span .texto{
 /* mobile rodapé */
 @media screen and (max-width:600px) {
     .maps{
-       width: 103%;
+       width: 100%;
+       height: 15rem;
    }
    .rodape{
        display:flex;
        flex-direction: column;
-       width:100%
+       width:100%;
+       height: 100%;
    }
    .footer_contatos{
        display: flex;
-       flex-direction: row;
+       justify-content: space-around;
    }
    #email{
     display: flex;
@@ -1322,40 +1332,92 @@ span .texto{
    .links{
        display:flex;
        justify-content: center;
-       align-items: start;
-       padding: 15px;
-       
+       padding: 10px 0 0 0;
+       font-size: 0.8rem;
    }
-    .paiCopyright {
-        padding:40px;
-        display:flex;
-        justify-content: end;
 
+   .faleConosco{
+    font-size: 0.8rem;
+    margin: 0;
    }
+
+   #faleConosco{
+    font-size: 0.9rem;
+   }
+
+   .iconFaleConosco{
+    font-size: 15px !important;
+   }
+
+   #iconFaleConosco{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+   }
+
+   .divIcon{
+    padding: 15px 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   }
+
+   .icon{
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+   }
+
+   .material-symbols-outlined{
+    position: relative;
+    top: 3px;
+   }
+
+   .copyright{
+    width: 100%;
+    justify-content: space-between;
+   }
+
    #copy{
-    padding:0%;
-    font-size: small;
+    padding:0 0 0 10px;
+    font-size: 0.5rem;
    } 
+
+   .copyright #nocline{
+    width: 30vw;
+    height: 3.2vh;
+   }
+
    .feedbackForm {
        display: flex;
        flex-direction: column;
        background-color: white;
        position: absolute;
        z-index: 99;
-       right: 17%;
-       height: 10.1rem;
+       right: 7%;
+       height: 8rem;
        width: 30%;
-       bottom: -229.35rem;
+       top: 191.4rem;
        justify-content: space-around;
-       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+       box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 20px 0px, rgba(0, 0, 0, 0.04) 1px 1px 20px 0px;
+       padding: 56.1px ;
    }
+
+   .feedbackForm h2{
+    font-size: 1.4rem;
+    margin-top: -50px;
+   }
+
    .feedbackForm input{
        border-bottom: 2px solid black;
        border-top: white;
        border-right: white;
        border-left: white;
        outline: none;
-       margin:7px;
+       margin:5px;
+       font-size: 0.6rem;
    }  
    
    .feedbackForm ::placeholder{
@@ -1364,13 +1426,13 @@ span .texto{
    
     .enviarMensagem {
        color:white;
-       font-size: 15px;
+       font-size: 8px;
        background-color: black;
        position:absolute;
-       top: 16.4rem;
-       left:5rem;
+       top: 12rem;
+       left:4rem;
        z-index:3;
-       height:2rem;
+       height:1rem;
        width: 7rem;
        text-transform: uppercase;
        border: none;
@@ -1378,6 +1440,11 @@ span .texto{
        transition: all 0.3s ease 0s;
        cursor: pointer;
        outline: none;
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: 600;
    } 
    
    .enviarMensagem:hover {
