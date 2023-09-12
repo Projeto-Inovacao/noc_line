@@ -721,7 +721,27 @@ a {
 }
 
 #maria{
-    background-image: url("./assets/maria.jpeg");
+    background-image: url("../assets/maria.jpeg");
+}
+
+#anthony{
+    background-image: url("../assets/tonyv3.jpeg");
+}
+
+#nunes{
+    background-image: url("../assets/nunes.jpeg");
+}
+
+#yasmin{
+    background-image: url("../assets/yasmin.jpeg");
+}
+
+#sanchez{
+    background-image: url("../assets/sanchez.jpeg");
+}
+
+#davi{
+    background-image: url("../assets/davi.jpeg");
 }
 
 .filter{
