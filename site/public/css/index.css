@@ -648,7 +648,7 @@ a {
 }
 /* Fim Pq nos escolher*/
 
-/* Começo do carrosel  */
+/* Começo da Nossa Equipe  */
 .all{
     margin: 0;
     padding: 0;
@@ -666,7 +666,7 @@ a {
 
 .titulo{
     width: 75% ;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -683,143 +683,142 @@ a {
     font-size: 20px;
     margin-bottom: 7px;
 }
-
-.slider{
-    margin: 0 auto;
-    width: 64%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.slides{
- width: 700px;
- height: 700px;
- display: flex;
-}
-
-.slides input{
-    display: none
-}
-
-.slide{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 115.4%;
-}
-
-.slide .img-membro{
-    background-image: url("../assets/anthony.jpeg");
-    background-size: cover;
-    height: 60vh;
-    transition: 2s;
-    width: 20vw;
-    z-index: 0;
-    position: relative;
-    
-}
-
-#maria{
-    background-image: url("./assets/maria.jpeg");
-}
-
-.filter{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.552);
-    z-index: 999;
-    bottom: -1px;
+.all-membros{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 15vh;
+    height:65vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;  
+    justify-content: space-around;
 }
+.card{
+    background-color: rgba(0, 0, 0, 0.656);
+    width: 20.3%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* margin-top: 15px; */
+    }
 
-.filter h2{
-    color: #FFFF;
+.img-membro{
+    background-image: url('../assets/anthony.jpeg');
+    background-repeat: no-repeat;
+    width:90%;
+    height: 46vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+    margin-top: 20px;
+
+}
+.txt{
+    color: white;
     text-align: center;
-    font-size:x-large;
+    margin-top: 546px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.filter p{
-    color: #FFFF;
-    text-align: center;
-    font-size: 20px;
+.txt h1{
+   font-weight: 100;
+   
 }
+.txt h4{
+    font-weight: 600;
+ }
 
-.espaco {
-    width: 20px;
+/* Final da Nossa Equipe */
+
+/* Começo da Nossa Equipe responsivo  */
+
+@media only screen and (max-width: 600px){
+    .all{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #titulo-equipe{
+        height: 10vh;
+    }
+    
+    .titulo{
+        width: 75% ;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #ffffffaf solid 1px;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-bottom: 60px;
+        z-index: 999;
+        position: relative;
+    }
+    
+    .titulo h4 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .all-membros{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height:221vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: -10px;
+
+    }
+    .card{
+        background-color: rgba(0, 0, 0, 0.656);
+        width: 70%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        /* margin-top: 15px; */
+        }
+    
+    .img-membro{
+        background-image: url('../assets/anthony.jpeg');
+        background-repeat: no-repeat;
+        width:90%;
+        height: 38vh;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       background-size: cover;
+        margin-top: 20px;
+    
+    }
+    .txt{
+        color: white;
+        text-align: center;
+        margin-top: 430px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .txt h1{
+       font-weight: 100;
+       
+    }
+    .txt h4{
+        font-weight: 600;
+     }
+   
 }
-
-.manual-navigation{
-    position: absolute;
-    width: 400px;
-    margin-top: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 182px;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 400px;
-    margin-top: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 182px;
-}
-
-.manual-btn{
-    border: 2px solid #101010;
-    width: 5px;
-    height: 10px;
-    padding: 5px;
-    border-radius: 32px;
-    cursor: pointer;
-    margin-left: 40px;
-    background-color: #ffffff2b;
-    transition: 1s;
-}
-
-
-
-.manual-btn:hover{
-  background-color: #060462;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -115.4%;
-}
-.navigation-auto div{
-    border: 2px solid #0e045a;
-    padding: 5px;
-    border-radius: 32px;
-    cursor: pointer;
-    margin-left: 40px;
-    transition: 1s;
-    width: 5px;
-    height: 10px;
-}
-
-#radio1:checked ~.navigation-auto .auto-btn1{
-    background-color: #070707;
-}
-
-#radio2:checked ~.navigation-auto .auto-btn2{
-    background-color: #050505;
-}
-
-#espaco-final {
-    width: 10px;
-    background-color: white;
-}
-/* Final do carrosel */
+/* Final da Nossa Equipe responsivo */
 
 /* começo do comece conosco */
 .paiComeceConosco {
