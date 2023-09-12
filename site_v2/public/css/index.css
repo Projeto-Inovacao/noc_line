@@ -921,8 +921,7 @@ a {
 }
 /* fim do comece conosco */
 
-/* começo do rodape */
-/* redefinindo as tag */
+
 /* começo do rodape */
 .maps{
     z-index: 0;
@@ -940,7 +939,7 @@ a {
     right: 4%;
     height: 25.5rem;
     width: 24rem;
-    bottom: -156.9rem;
+    bottom: -145.6rem;
     justify-content: space-around;
     padding: 70px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -1416,7 +1415,7 @@ span .texto{
        background-color: white;
        position: absolute;
        z-index: 99;
-       right: 7%;
+       right: 22.9%;
        height: 8rem;
        width: 30%;
        top: 191.4rem;
