@@ -25,7 +25,6 @@ while True:
         '''
         insert = [uso_cpu, 1, 1, 1, data, uso_disco, 1, 1, 3, data, uso_memoria, 1, 1, 2, data]
         cursor = connection.cursor()
-        print(query)
         cursor.execute(query, insert)
         connection.commit()
 
@@ -35,7 +34,7 @@ while True:
         print("=" * 40)
         print("")
         
-        time.sleep(20)
+        time.sleep(10)
    
 
 
