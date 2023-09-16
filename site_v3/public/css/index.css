@@ -387,6 +387,7 @@ a {
     width: 18%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 .expanding-divM {
     width: 100%;
     height: 0;
@@ -396,7 +397,6 @@ a {
     position: absolute;
     bottom: 100%;
     left: 0;
-    
 }
 
 .hidden-textM {
@@ -404,6 +404,7 @@ a {
     margin: 0;
     color: white;
 }
+
 .QuadradoDireita{
     background-image: url(../assets/pexels-fauxels-3184357.jpg);
     background-repeat: no-repeat;
@@ -412,6 +413,7 @@ a {
     width: 18%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 .expanding-divD {
     width: 100%;
     height: 0;
@@ -438,6 +440,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 .faixapretaM{
     position: relative;
     top: 67%;
@@ -447,6 +450,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 .faixapretaD{
     position: relative;
     top: 67%;
@@ -459,7 +463,7 @@ a {
 
 .expanded {
     height: 200px;
-  }
+}
 
 .faixapreta p{
     color: white;
@@ -481,10 +485,7 @@ a {
     flex-direction: column;
     height: 8vh;
     width: 100%;
-    
 }
-
-
 /* Fim do Entenda Contexto */
 
 /* Inicio Pq nos escolher*/
@@ -565,89 +566,7 @@ a {
     margin-top: 1rem;
     font-size: 15px;
 }
-
-/* responsivo pq nos escolher */
-@media only screen and (max-width: 600px) {
-    .Div_filtro{
-        height: 53rem !important;
-    }
-
-    .Cards_PNE{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100%;
-        margin-top: 10%;
-    }
-
-    .Cards_PNE .card{
-        margin: auto;
-        width: 17rem;
-        height: 15rem;
-    }
-
-    .card img{
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-top: 1.5rem;
-    }
-
-    .card h3{
-        font-size: 0.9rem;
-    }
-
-    .card p{
-        font-size: 0.75rem;
-    }
-
-    .Tit_PNE{
-        height: auto;
-        font-size: 0.45rem;
-    }
-
-    .Tit_PNE h1 {
-        margin: auto;
-        color: rgb(255, 255, 255);
-        position: relative;
-    }
-    
-    .Tit_PNE h3 {
-        margin-top: 1rem;
-        margin-top: 20px;
-        color: rgb(255, 255, 255);
-        position: relative;
-        top: -70%;
-        font-size: 0.69rem;
-    }
-
-    .Div_PqNosEscolher {
-        background-image: url(../assets/banner45.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 61rem !important;
-        z-index: 0;
-        position: relative;
-        margin-top: 13%;
-    }
-
-    .Div_PqNosEscolher {
-    width: 100%;
-    height: 85rem;
-    z-index: 0;
-    }
-
-    .card{
-        margin-top: 3rem;
-        margin-left: 1.5rem;
-    }
-    
-    .Div_filtro {
-   
-    height: 78rem;
-
-    }
-}
-/* Fim Pq nos escolher*/
+/* fim por que nos escolher */
 
 /* começo equipe */
 .all{
@@ -684,6 +603,7 @@ a {
     font-size: 20px;
     margin-bottom: 7px;
 }
+
 .all-membros{
     margin: 0;
     padding: 0;
@@ -693,7 +613,6 @@ a {
     justify-content: center;
     align-items: center;  
     justify-content: space-around;
-
 }
 
 .card{
@@ -705,9 +624,9 @@ a {
     align-items: start;
     /* margin-top: 15px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+}
 
-.img-membro{
+.img-membro {
     background-repeat: no-repeat;
     width:90%;
     height: 36vh;
@@ -742,110 +661,23 @@ a {
     background-image: url('../assets/maria.jpeg');
 }
 
-.txt{
+.txt {
     color: white;
     text-align: center;
     margin-top: 280px;
     font-size: 13px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .txt h1{
    font-weight: 100;
    
 }
+
 .txt h4{
     font-weight: 600;
- }
-
+}
 /* Final da Nossa Equipe */
-
-/* Começo da Nossa Equipe responsivo  */
-
-@media only screen and (max-width: 600px){
-    .all{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 95vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #titulo-equipe{
-        height: 10vh;
-    }
-    
-    .titulo{
-        width: 75% ;
-        height: 128vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: #ffffffaf solid 1px;
-        background-color: white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        margin-bottom: 60px;
-        z-index: 999;
-        position: relative;
-    }
-    
-    .titulo h4 {
-        font-size: 20px;
-        margin-bottom: 7px;
-    }
-    .all-membros{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height:221vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;  
-        justify-content: space-around;
-        flex-direction: column;
-        margin-left: -10px;
-
-    }
-    .card{
-        background-color: rgba(0, 0, 0, 0.656);
-        width: 70%;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        /* margin-top: 15px; */
-        }
-    
-    .img-membro{
-        background-image: url('../assets/anthony.jpeg');
-        background-repeat: no-repeat;
-        width:90%;
-        height: 38vh;
-        display: flex;
-       justify-content: center;
-       align-items: center;
-       background-size: cover;
-        margin-top: 20px;
-    
-    }
-    .txt{
-        color: white;
-        text-align: center;
-        margin-top: 430px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .txt h1{
-       font-weight: 100;
-       
-    }
-    .txt h4{
-        font-weight: 600;
-     }
-    }
-/* fim da equipe */
 
 /* começo do comece conosco */
 .paiComeceConosco {
@@ -926,7 +758,6 @@ a {
 }
 /* fim do comece conosco */
 
-
 /* começo do rodape */
 .maps{
     z-index: 0;
@@ -984,9 +815,9 @@ a {
     box-shadow: 0px 5px 10px rgb(138, 138, 138);
     transform: translateY(-7px);
 }
+
 .footer_contatos{
     display:flex;
-
 }
 
 .rodape {
@@ -1015,10 +846,10 @@ a {
     color:black;
     text-decoration: none;
 }
+
 .divIcon {
     display: flex;
     padding:20px;
-    
 }
 
 .icon {
@@ -1028,9 +859,11 @@ a {
     padding: 2px;
     
 }
+
 .links a:hover {
     font-size: 12px;
 }
+
 .iconFace {
     display: flex;
     width: 2rem;
@@ -1038,12 +871,14 @@ a {
     padding: 2px;
     margin-top: -2px;
 }
+
 .copyright {
     justify-content: space-between;
     display: flex;
     align-items: center;
     border-top: 2px solid gray;
 }
+
 .copyright span{
     justify-content: space-around;
     padding: 23px;
@@ -1051,12 +886,11 @@ a {
 
 #copy{
     color:#B4B4B4;
-    
 }
+
 .copyright #nocline {
     height:3rem;
 } 
-
 /* fim do rodape */
 
 /* parte mobile entenda como trabalhamos */
@@ -1166,9 +1000,6 @@ a {
     top: 33.5%;
     height: 8.5vh;
 }
-
-
-
 }
 /* fim mobile */
 
@@ -1333,6 +1164,7 @@ span .texto{
 /* fim do cabeçalho mobile */
 
 /* mobile rodapé */
+/* rodapé mobile */
 @media screen and (max-width:600px) {
     .maps{
        width: 100%;
@@ -1484,5 +1316,175 @@ span .texto{
        box-shadow: 0px 5px 10px rgb(138, 138, 138);
        transform: translateY(-7px);
    }
-}
     /* fim do rodape */
+}
+
+/* responsivo pq nos escolher */
+@media only screen and (max-width: 600px) {
+    .Div_filtro{
+        height: 53rem !important;
+    }
+
+    .Cards_PNE{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .Cards_PNE .card{
+        margin: auto;
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .card img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .card h3{
+        font-size: 0.9rem;
+    }
+
+    .card p{
+        font-size: 0.75rem;
+    }
+
+    .Tit_PNE{
+        height: auto;
+        font-size: 0.45rem;
+    }
+
+    .Tit_PNE h1 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        position: relative;
+    }
+    
+    .Tit_PNE h3 {
+        margin-top: 1rem;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: -70%;
+        font-size: 0.69rem;
+    }
+
+    .Div_PqNosEscolher {
+        background-image: url(../assets/banner45.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 61rem !important;
+        z-index: 0;
+        position: relative;
+        margin-top: 13%;
+    }
+
+    .Div_PqNosEscolher {
+    width: 100%;
+    height: 85rem;
+    z-index: 0;
+    }
+
+    .card{
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+    }
+    
+    .Div_filtro {
+   
+    height: 78rem;
+
+    }
+}
+/* Fim Pq nos escolher*/
+   
+/* Começo da Nossa Equipe responsivo  */
+@media only screen and (max-width: 600px){
+    .all{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #titulo-equipe{
+        height: 10vh;
+    }
+    
+    .titulo{
+        width: 75% ;
+        height: 128vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #ffffffaf solid 1px;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-bottom: 60px;
+        z-index: 999;
+        position: relative;
+    }
+    
+    .titulo h4 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .all-membros{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height:221vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: -10px;
+
+    }
+    .card{
+        background-color: rgba(0, 0, 0, 0.656);
+        width: 70%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        /* margin-top: 15px; */
+        }
+    
+    .img-membro{
+        background-image: url('../assets/anthony.jpeg');
+        background-repeat: no-repeat;
+        width:90%;
+        height: 38vh;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       background-size: cover;
+        margin-top: 20px;
+    
+    }
+    .txt{
+        color: white;
+        text-align: center;
+        margin-top: 430px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .txt h1{
+       font-weight: 100;
+       
+    }
+    .txt h4{
+        font-weight: 600;
+     }
+    }
+/* fim da equipe */
