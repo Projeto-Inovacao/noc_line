@@ -108,7 +108,7 @@
     font-size: 10px;
     justify-content: center;
     text-align: center;
-  }
+}
   
 .dropdown:hover .dropdown-content {
     display: block;
@@ -127,7 +127,6 @@ a {
     font-size: 11px;
     transform: translateY(11px);
 }
-
 /* fim do cabeçalho */
 
 /* começo do banner */
@@ -252,7 +251,6 @@ a {
 .botao2Banner a:hover {
     color: black;
 }
-
 /* fim do banner */
 
 /* Começo do Entenda Como trabalhamos */
@@ -285,17 +283,17 @@ a {
     height: 5vh;
 }
 
-.tituloEntenda p{
+.tituloEntenda p {
     color: black;
     font-size: large;
     height: 5vh;
 }
 
-.subtituloEntenda{
+.subtituloEntenda {
     border-color: black;
 }
 
-.linhaPreta{
+.linhaPreta {
     position: relative;
     top: 60%;
     left: 10%;
@@ -346,7 +344,7 @@ a {
     border-radius: 30px;
 }
 
-.QuadradoEsquerda{
+.QuadradoEsquerda {
     background-image: url(../assets/trabalhadores-de-escritorio-usando-graficos-de-financas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,8 +353,8 @@ a {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     display: flex;
     justify-content: center;
-
 }
+
 .expanding-div {
     width: 100%;
     height: 0;
@@ -373,12 +371,12 @@ a {
     margin: 0;
 }
 
-.imagemEntenda{
+.imagemEntenda {
     height: 45vh;
     width: 100%;
 }
 
-.QuadradoMeio{
+.QuadradoMeio {
     background-image: url(../assets/conceito-de-gerenciamento-de-dados-de-computacao-em-nuvem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,7 +403,7 @@ a {
     color: white;
 }
 
-.QuadradoDireita{
+.QuadradoDireita {
     background-image: url(../assets/pexels-fauxels-3184357.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -431,7 +429,7 @@ a {
     color: white;
 }
 
-.faixapreta{
+.faixapreta {
     position: relative;
     top: 67%;
     width: 100%;
@@ -441,7 +439,7 @@ a {
     align-items: center;
 }
 
-.faixapretaM{
+.faixapretaM {
     position: relative;
     top: 67%;
     width: 100%;
@@ -451,7 +449,7 @@ a {
     align-items: center;
 }
 
-.faixapretaD{
+.faixapretaD {
     position: relative;
     top: 67%;
     width: 100%;
@@ -465,20 +463,20 @@ a {
     height: 200px;
 }
 
-.faixapreta p{
+.faixapreta p {
     color: white;
     align-self: center;
     margin-bottom: 3%;
 }
 
-.faixapreta button{
+.faixapreta button {
     color: white;
     border-color: white;
     background-color: black;
     width: 40%;
 }
 
-.filhofaixa{
+.filhofaixa {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,7 +567,7 @@ a {
 /* fim por que nos escolher */
 
 /* começo equipe */
-.all{
+.all {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -580,11 +578,11 @@ a {
     flex-direction: column;
 }
 
-#titulo-equipe{
+#titulo-equipe {
     height: 10vh;
 }
 
-.titulo{
+.titulo {
     width: 75% ;
     height: 128vh;
     display: flex;
@@ -604,7 +602,7 @@ a {
     margin-bottom: 7px;
 }
 
-.all-membros{
+.all-membros {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -615,7 +613,7 @@ a {
     justify-content: space-around;
 }
 
-.card{
+.card {
     background-color: rgba(0, 0, 0, 0.656);
     width: 17.3%;
     height: 50vh;
@@ -669,12 +667,11 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.txt h1{
+.txt h1 {
    font-weight: 100;
-   
 }
 
-.txt h4{
+.txt h4 {
     font-weight: 600;
 }
 /* Final da Nossa Equipe */
@@ -759,7 +756,7 @@ a {
 /* fim do comece conosco */
 
 /* começo do rodape */
-.maps{
+.maps {
     z-index: 0;
     height: 19rem;
     width: 100%;   
@@ -781,7 +778,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.feedbackForm input{
+.feedbackForm input {
     border-bottom: 2px solid black;
     border-top: white;
     border-right: white;
@@ -789,7 +786,7 @@ a {
     outline: none;
 }  
 
-.feedbackForm ::placeholder{
+.feedbackForm ::placeholder {
     padding-left: 0.5rem;
 }
 
@@ -816,7 +813,7 @@ a {
     transform: translateY(-7px);
 }
 
-.footer_contatos{
+.footer_contatos {
     display:flex;
 }
 
@@ -857,7 +854,6 @@ a {
     width: 2rem;
     height: 2rem;
     padding: 2px;
-    
 }
 
 .links a:hover {
@@ -879,12 +875,12 @@ a {
     border-top: 2px solid gray;
 }
 
-.copyright span{
+.copyright span {
     justify-content: space-around;
     padding: 23px;
 }
 
-#copy{
+#copy {
     color:#B4B4B4;
 }
 
@@ -895,113 +891,113 @@ a {
 
 /* PARTE MOBILE */
 @media only screen and (max-width: 600px) {
-    /* Começo cabeçalho mobile */
-    
-    
-.paiCabecalho {
-        width: 95%;
-        margin: auto;
-    }
-    
-    .filhoCabecalho {
-        width: 100%;
-        height: 7vh;
-    }
-    
-    .esquerdaCabecalho {
-        width: 6vw;
-        height: 1vh;
-    }
-    
-    .direitaCabecalho {
-        width: 50vw;
-        height: 7vh;
-    }
-    
-    #imgEsquerdaCabecalho {
-        width: 30vw;
-        height: 3.2vh;
-    }
-    
-    #imgDireitaCabecalho {
-        width: 3vw;
-        height: 2vh;
-    }
-    
- /* fim cabeçalho mobile */
-/* Começo Banner mobie */
-    .paiBanner {
-        height: 18rem !important;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50%;
-    }
-    
-    .divBoxTextoBanner {
-        margin: 0;
-        height: 100%;
-        margin-left: 1rem !important;
-    }
-    
-    .pTituloBanner {
-        font-size: 1rem;
-        text-align: center;
-    }
-    
-    .textoBanner {
-        font-size: 0.55rem;
-        text-align: center;
-    }
-    
-    .divBoxBotaoBanner{
-        height: 10%;
-    }
-    
-    .botaoBanner{
-        width: 55%;
-        height: auto;
-    }
-    
-    .botao1Banner {
-        width: 40%;
-        height: 100%;
-        padding: 0 0.4rem;
-        font-size: 6px;
-        border: 2px #ffffff solid;
-    }
-    
-    span .texto{
-        width: 100%;
-    }
-    
-    .botao2Banner {
-        width: 40%;
-        height: 100%;
-        padding: 0 0.4rem;
-        font-size: 6px;
-    }
-    .titulo{
-        width: 80%;
-        height: 10vh;
-    }
-    
-    .titulo h1 {
-        font-size: 10px;
-        margin-bottom: 7px;
-    }
-    /* fim banner mobile */
 
-    /* começo entenda como trabalhamos mobile */
-.imagemEntenda{
-        height: 35vh;
-        width: 100%;
-    }
+/* Começo cabeçalho mobile */
+.paiCabecalho {
+    width: 95%;
+    margin: auto;
+}
+    
+.filhoCabecalho {
+    width: 100%;
+    height: 7vh;
+}
+    
+.esquerdaCabecalho {
+    width: 6vw;
+    height: 1vh;
+}
+    
+.direitaCabecalho {
+    width: 50vw;
+    height: 7vh;
+}
+    
+#imgEsquerdaCabecalho {
+    width: 30vw;
+    height: 3.2vh;
+}
+    
+#imgDireitaCabecalho {
+    width: 3vw;
+    height: 2vh;
+}
+/* fim cabeçalho mobile */
+
+/* Começo Banner mobie */
+.paiBanner {
+    height: 18rem !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+    
+.divBoxTextoBanner {
+    margin: 0;
+    height: 100%;
+    margin-left: 1rem !important;
+}
+    
+.pTituloBanner {
+    font-size: 1rem;
+    text-align: center;
+}
+    
+.textoBanner {
+    font-size: 0.55rem;
+    text-align: center;
+}
+    
+.divBoxBotaoBanner{
+    height: 10%;
+}
+    
+.botaoBanner {
+    width: 55%;
+    height: auto;
+}
+    
+.botao1Banner {
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
+    border: 2px #ffffff solid;
+}
+    
+span .texto {
+    width: 100%;
+}
+    
+.botao2Banner {
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
+}
+
+.titulo {
+     width: 80%;
+    height: 10vh;
+}
+    
+.titulo h1 {
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+/* fim banner mobile */
+
+/* começo entenda como trabalhamos mobile */
+.imagemEntenda {
+    height: 35vh;
+    width: 100%;
+}
 
 .fundoEntenda {
     height: 45rem;
 }
         
-.textoEntenda{
+.textoEntenda {
     height: 9rem;
 }
 
@@ -1010,16 +1006,16 @@ a {
     top: 80%;
 }
 
-.tituloEntenda p{
+.tituloEntenda p {
     font-size: 13px;
 }
 
-.subtituloEntenda{
+.subtituloEntenda {
     position: relative;
     top: 65%;
 }
 
-.subtituloEntenda p{
+.subtituloEntenda p {
     font-size: 11px;
 }
 
@@ -1034,7 +1030,6 @@ a {
     top: 6.5%;
 }
 
-
 .idDetalhes {
     font-size: 2.5vw;
     top: -5%;
@@ -1046,23 +1041,22 @@ a {
     height: 3vh;
 }
 
-.txtDetalhes{
+.txtDetalhes {
     font-size: 0.5rem;
 }
 
-.QuadradoEsquerda{
+.QuadradoEsquerda {
     background-size: 100%;
     height: 25%;
     width: 65%;
 }
-
 
 .hidden-text {
     font-size:  0.7rem;
     margin: 0 !important;
 }
 
-.QuadradoMeio{
+.QuadradoMeio {
     background-size: 120%;
     height: 25%;
     width: 65%;
@@ -1072,40 +1066,38 @@ a {
     font-size:  0.7rem;  
 }
 
-.QuadradoDireita{
+.QuadradoDireita {
     background-size: 100%;
     height: 25%;
     width: 65%;
-
 }
 
 .hidden-textD {
     font-size: 0.7rem;
 }
 
-
-.faixapreta{
-    top: 33.5%;
-    height: 8.5vh;
-}
-.faixapretaM{
+.faixapreta {
     top: 33.5%;
     height: 8.5vh;
 }
 
-.faixapretaD{
+.faixapretaM {
     top: 33.5%;
     height: 8.5vh;
 }
 
+.faixapretaD {
+    top: 33.5%;
+    height: 8.5vh;
+}
 /* fim entenda como trabalhamos mobile */
 
 /* Começo porque nos escolher mobile */
-.Div_filtro{
+.Div_filtro {
     height: 53rem !important;
 }
 
-.Cards_PNE{
+.Cards_PNE {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1113,27 +1105,27 @@ a {
     margin-top: 10%;
 }
 
-.Cards_PNE .card{
+.Cards_PNE .card {
     margin: auto;
     width: 17rem;
     height: 15rem;
 }
 
-.card img{
+.card img {
     width: 2.5rem;
     height: 2.5rem;
     margin-top: 1.5rem;
 }
 
-.card h3{
+.card h3 {
     font-size: 0.9rem;
 }
 
-.card p{
+.card p {
     font-size: 0.75rem;
 }
 
-.Tit_PNE{
+.Tit_PNE {
     height: auto;
     font-size: 0.45rem;
 }
@@ -1169,50 +1161,47 @@ height: 85rem;
 z-index: 0;
 }
 
-.card{
+.card {
     margin-top: 3rem;
     margin-left: 1.5rem;
 }
 
 .Div_filtro {
-
 height: 78rem;
-
 }
 /* fim porque nos escolher mobile */
 
 /* Começo da nossa equipe mobile */
+.all-membros {
+    height:221vh;
+    display: flex; 
+    flex-direction: column;
+    margin-left: -10px;
+}
 
-    .all-membros{
-        height:221vh;
-        display: flex; 
-        flex-direction: column;
-        margin-left: -10px;
+.car {
+    width: 70%;
+}
+    
+.img-membro {
+    margin-top: 20px;
+}
 
-    }
-    .card{
-        width: 70%;
-        }
-    
-    .img-membro{
-        margin-top: 20px;
-    
-    }
-    .txt{
-        margin-top: 430px;
-    }
+.txt {
+    margin-top: 430px;
+}
 /* fim da nosssa equipe mobile */
-/* Começo do comece conosco mobile */
 
-.paiComeceConosco{
+/* Começo do comece conosco mobile */
+.paiComeceConosco {
     height: 200px;
     background-size: cover;
     background-position: 100%;
 }
+
 .filhoComeceConosco {
     width: 80%;
     height: 85%;
-
 }
 
 .boxTextoComeceConosco {
@@ -1235,126 +1224,123 @@ height: 78rem;
     position: relative;
     margin-top: 8px;
 }
+/* fim do comece conosco mobile */
 
- 
+/* Comecço rodapé mobile */
+.maps {
+    height: 15rem;
+}
 
- /* fim do comece conosco mobile */
+.rodape {
+    flex-direction: column;
+    width: 65vw;
+    height:30vh;
+}
 
- /* Comecço rodapé mobile */
-    .maps{
-       height: 15rem;
-   }
+.footer_contatos {
+    display: flex;
+    justify-content: space-around;
+}
 
-   .rodape{
-       flex-direction: column;
-       width: 65vw;
-       height:30vh;
-   }
-
-   .footer_contatos{
-       display: flex;
-       justify-content: space-around;
-   }
-
-   #email {
+#email {
     display: flex;
     flex-direction: row;
-   }
+}
    
-   .links{
-       padding: 10px 0 0 0;
-       font-size: 0.8rem;
-       position: relative;
-       left: 40%;
-       top: 15%;
-   }
+.links {
+    padding: 10px 0 0 0;
+    font-size: 0.8rem;
+    position: relative;
+    left: 40%;
+    top: 15%;
+}
 
-   .faleConosco{
+.faleConosco {
     font-size: 0.8rem;
     margin: 0;
     position: relative;
     left: 20%;
     top: 15%;
-   }
+}
 
-   #faleConosco{
+#faleConosco {
     font-size: 0.9rem;
-   }
+}
 
-   .iconFaleConosco{
+.iconFaleConosco {
     font-size: 15px !important;
-   }
+}
 
-   #iconFaleConosco{
+#iconFaleConosco {
     width: 15px;
     height: 15px;
     position: relative;
     top: 4px;
     margin-right: 5px;
-   }
+}
 
-   .divIcon{
+.divIcon {
     padding: 15px 0 0 0;
     width: 100%;
     justify-content: space-around;
-   }
+}
 
-   .icon{
+.icon {
     padding: 0;
     width: 1.5rem;
     height: 1.5rem;
-   }
+}
 
-   .material-symbols-outlined{
+.material-symbols-outlined {
     position: relative;
     top: 3px;
-   }
+}
 
-   .copyright{
+.copyright {
     width: 100%;
-   }
+}
 
-   #copy{
+#copy {
     padding:0 0 0 10px;
     font-size: 0.5rem;
-   } 
+} 
 
-   .copyright #nocline{
+.copyright #nocline {
     width: 30vw;
     height: 3.2vh;
-   }
+}
 
-   .feedbackForm {
-       right: 10%;
-       height: 8rem;
-       width: 28%;
-       top: 396.9rem;
-       padding: 56.1px ;
-   }
+.feedbackForm {
+    right: 10%;
+    height: 8rem;
+    width: 28%;
+    top: 396.9rem;
+    padding: 56.1px ;
+}
 
-   .feedbackForm h2{
+.feedbackForm h2 {
     font-size: 1.4rem;
     margin-top: -50px;
-   }
-
-   .feedbackForm input{
-       margin:5px;
-       font-size: 0.6rem;
-   }  
-   
-    .enviarMensagem {
-       font-size: 8px;
-       top: 12rem;
-       left:4rem;
-       height:1rem;
-       width: 7rem;
-       padding: 10px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       font-weight: 600;
-   } 
-
-    /* fim do rodape Mobile */
 }
-    /* FIM MOBILE */
+
+.feedbackForm input {
+    margin:5px;
+    font-size: 0.6rem;
+}  
+   
+.enviarMensagem {
+    font-size: 8px;
+    top: 12rem;
+    left:4rem;
+    height:1rem;
+    width: 7rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+} 
+
+/* fim do rodape Mobile */
+}
+/* FIM MOBILE */
