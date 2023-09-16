@@ -1,0 +1,299 @@
+@media only screen{
+body{
+    margin: 0;
+    background-image: url(../assets/bannerLoginV4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar_login{
+    padding: 2.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.texto_navbar{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.texto_navbar:hover{
+    color: #5a78c4;
+    transform: translate(5px)
+}
+
+.div_logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo_login{
+    width: 25%;
+}
+
+.logo_login:hover{
+    cursor: pointer;
+}
+
+.div_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs_login{
+    /* padding: 2.5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 30rem; */
+}
+
+.inputs_login_esquerda, .inputs_login_direita{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+}
+
+.input_login{
+    padding: 1rem 1rem 1rem 3rem;
+    width: 16.5rem;
+    background-color: #43537DBD;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    color: white;
+}
+
+.input_login::placeholder{
+    color: white;
+}
+
+.input_size{
+    width: 8rem;
+}
+
+.input_mini{
+    padding: 1rem 1rem 1rem 3rem;
+    width: 3rem;
+}
+
+.btn_login{
+    padding: 0.7rem;
+    width: 21rem;
+    background-color: #5A78C4;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    border: solid 3px #5A78C4;
+}
+
+.btn_login:hover{
+    background: white;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    color: #5A78C4;
+    cursor: pointer;
+    border: solid 3px #5A78C4;
+    transform: scale(1.02);
+}
+
+footer{
+    padding-top: 2rem;
+    display: flex;
+}
+
+.span_copyright{
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: -10px;
+}
+
+.material-symbols-outlined{
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.input {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input img {
+    position: absolute;
+    left: 0.6rem;
+    bottom: 0.7rem;
+}
+
+#logo_estado{
+    position: absolute;
+    left: 14.1rem;
+}
+
+#logo_complemento{
+    position: absolute;
+    left: 9.1rem;
+}
+
+}
+
+/* responsive */
+@media (min-width: 400px) and (max-width: 900px){
+    body{
+        margin: 0;
+        background-image: url(../assets/bannerLoginV4.jpg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: 72%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar_login{
+        padding: 3.4rem 0 2rem 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+    }
+    
+    .texto_navbar{
+        font-size: 0.55rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .texto_navbar:hover{
+        color: #5a78c4;
+        transform: translate(5px)
+    }
+    
+    .div_logo{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .logo_login{
+        width: 70%;
+    }
+
+    .inputs_login{
+        display: block;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputs_login_esquerda{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 15rem;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    .inputs_login_direita{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 20rem;
+        padding: 0.8rem 2.5rem 1rem 2.5rem;
+    }
+
+    #input_pais, #input_numero{
+        margin-bottom: 0.8rem;
+    }
+    
+    .input_login{
+        padding: 0.6rem 0.6rem 0.6rem 2rem;
+        width: 12rem;
+        background-color: #43537DBD;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    .input_login::placeholder{
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    .btn_login{
+        padding: 0.8rem;
+        width: 14.5rem;
+        background-color: #5A78C4;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-size: 0.5rem;
+    }
+    
+    footer{
+        padding: 2rem;
+        display: flex;
+    }
+    
+    .span_copyright{
+        font-size: 0.7rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    .material-symbols-outlined{
+        width: 1.1rem;
+        height: 1rem;
+    }
+    
+    .input {
+        position: relative;
+        color: white;
+    }
+    
+    .input img {
+        position: absolute;
+        left: 8px;
+        bottom: 6px;
+    }
+
+    #logo_numero{
+        bottom: 47px;
+    }
+
+    #logo_complemento{
+        left: 8px;
+    }
+
+    #logo_estado{
+        left: 8px;
+        bottom: 47px;
+    }
+    }
+    

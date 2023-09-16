@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="js/botao.js">
+    <script src="js/botao.js"></script>
+</head>
+
+<body>
+    <div class="div_all">
+
+        <nav class="navbar_login">
+            <a href="login.html" class="texto_navbar">Login</a>
+            <a href="index.html#Div_PqNosEscolher" class="texto_navbar">Área de Atuação</a>
+            <a href="index.html#fundoEntenda" class="texto_navbar">Nosso Serviço</a>
+            <a href="index.html#titulo-equipe" class="texto_navbar">Nossa Equipe</a>
+            <a href="index.html" class="texto_navbar">Home</a>
+        </nav>
+
+        <div class="div_login">
+
+            <div class="div_logo">
+                <img src="./assets/logo branca.png" class="logo_login" alt="" onclick="home()">
+            </div>
+
+            <div class="inputs_login">
+                <div class="inputs_login_esquerda">
+
+                    <div class="input">
+                        <input type="text" name="" id="input_razao_social" class="input_login"
+                            placeholder="Razão Social"></input>
+                        <img src="./assets/icons8-video-id-verification-50.png" alt=""
+                            class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_cnpj" class="input_login" placeholder="CNPJ">
+                        <img src="./assets/icons8-empresa-cliente-50.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="email" name="" id="input_email" class="input_login"
+                            placeholder="Email da Empresa"></input>
+                        <img src="./assets/icons8-email-64.png" alt="" class="material-symbols-outlined">
+                    </div>
+                    
+                    <div class="input">
+                        <input type="text" name="" id="input_tel_cel" class="input_login"
+                            placeholder="Telefone Celular"></input>
+                        <img src="./assets/icons8-phone-50 (1).png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_tel_fixo" class="input_login"
+                            placeholder="Telefone Fixo"></input>
+                        <img src="./assets/icons8-phone-50.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="password" name="" id="input_senha" class="input_login" placeholder="Senha"></input>
+                        <img src="./assets/icons8-password-64 1.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                </div>
+                
+                <div class="inputs_login_direita">
+
+                    <div class="input">
+                        <input type="text" name="" id="input_pais" class="input_login input_size"
+                            placeholder="País"></input>
+                        <img src="./assets/icons8-country-50.png" alt="" class="material-symbols-outlined">
+                        <input type="text" name="" id="input_estado" class="input_login input_mini"
+                            placeholder="Estado">
+                        <img src="./assets/icons8-region-50.png" alt="" class="material-symbols-outlined"
+                            id="logo_estado">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_cidade" class="input_login" placeholder="Cidade"></input>
+                        <img src="./assets/icons8-city-50.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_bairro" class="input_login" placeholder="Bairro"></input>
+                        <img src="./assets/icons8-neighborhood-50.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_rua" class="input_login" placeholder="Rua"></input>
+                        <img src="./assets/icons8-street-50.png" alt="" class="material-symbols-outlined">
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="" id="input_numero" class="input_login input_mini"
+                            placeholder="Número"></input>
+                        <img src="./assets/icons8-10mph-speed-sign-50.png" alt="" class="material-symbols-outlined"
+                            id="logo_numero">
+                        <input type="text" name="" id="input_complemento" class="input_login input_size"
+                            placeholder="Complemento"></input>
+                        <img src="./assets/icons8-parking-and-3rd-floor-50.png" alt="" class="material-symbols-outlined"
+                            id="logo_complemento">
+                    </div>
+
+                    <div class="input">
+                        <input type="password" name="" id="input_confirma_senha" class="input_login"
+                            placeholder="Confirmação de Senha"></input>
+                        <img src="./assets/icons8-password-64 1.png" alt="" class="material-symbols-outlined">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn_login" onclick="cadastro()">Cadastrar</button>
+
+        </div>
+
+        <footer>
+            <span class="span_copyright">2023 copyright by nocline ©</span>
+        </footer>
+</body>
+</html>

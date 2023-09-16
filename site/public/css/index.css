@@ -1,0 +1,1490 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* começo do cabeçalho */
+.paiCabecalho {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filhoCabecalho {
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.esquerdaCabecalho {
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.direitaCabecalho {
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pCabecalho {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.pCabecalho::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.pCabecalho::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.pCabecalho:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#imgEsquerdaCabecalho {
+    width: 13vw;
+    height: 6vh;
+}
+
+#imgEsquerdaCabecalho,#nocline:hover{
+    cursor: pointer;
+}
+
+#imgDireitaCabecalho {
+    width: 1vw;
+    height: 3vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    margin-left: -50px;
+    padding: 10px 10px;
+    z-index: 1;
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    font-size: 11px;
+    transform: translateY(11px);
+}
+
+/* fim do cabeçalho */
+
+/* começo do banner */
+.paiBanner {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-image: url(..//assets/banner4.jpg);
+    background-size: 100%;
+}
+
+.divBoxTextoBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    margin-top: 9%;
+    margin-left: -2%;
+}
+
+.pTituloBanner {
+    display: flex;
+    justify-content: center;
+    width: 10 0%;
+    font-size: 38px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+.divBoxTextoBanner {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.textoBanner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}
+
+.divBoxBotaoBanner {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.botao1Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px #ffffff solid;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao2Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao2Banner:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+}
+
+.botao1Banner:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+}
+
+.botao1Banner:hover .texto, .botao2Banner:hover .texto, #botaoComeceConosco:hover .texto{
+    color: black;
+}
+
+.botaoBanner {
+    width: 30%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.botao1Banner a {
+    color: white;
+}
+
+.botao1Banner a:hover {
+    color: black;
+}
+
+.botao2Banner a {
+    color: white;
+}
+
+.botao2Banner a:hover {
+    color: black;
+}
+
+/* fim do banner */
+
+/* Começo do Entenda Contexto */
+.fundoEntenda {
+    background-color: white;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.paiEntenda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.textoEntenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.tituloEntenda {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+}
+
+.tituloEntenda p{
+    color: black;
+    font-size: large;
+    height: 5vh;
+}
+
+.subtituloEntenda{
+    border-color: black;
+}
+
+.linhaPreta{
+    position: relative;
+    top: 60%;
+    left: 10%;
+    width: 80%;
+    height: 0.4vh;
+    background-color: black;
+}
+
+.divQuadrados {
+    margin-top: 5%;
+    background-color: white;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.idDetalhes {
+    font-size: 13px;
+    position: relative;
+    top: -20%;
+    font-weight: bold;
+    color: white;
+}
+
+.botaoSaibaMais {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px #ffffff solid;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botaoSaibaMais:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+    border-radius: 30px;
+}
+
+.QuadradoEsquerda{
+    background-image: url(../assets/trabalhadores-de-escritorio-usando-graficos-de-financas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh ;
+    width: 18%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    justify-content: center;
+
+}
+.expanding-div {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+.hidden-text {
+    padding: 10px;
+    margin: 0;
+}
+
+.imagemEntenda{
+    height: 45vh;
+    width: 100%;
+}
+
+.QuadradoMeio{
+    background-image: url(../assets/conceito-de-gerenciamento-de-dados-de-computacao-em-nuvem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 45vh ;
+    width: 18%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.expanding-divM {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+.hidden-textM {
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.QuadradoDireita{
+    background-image: url(../assets/pexels-fauxels-3184357.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 45vh ;
+    width: 18%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.expanding-divD {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+.hidden-textD {
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.faixapreta{
+    position: relative;
+    top: 67%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.faixapretaM{
+    position: relative;
+    top: 67%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.faixapretaD{
+    position: relative;
+    top: 67%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.expanded {
+    height: 200px;
+}
+
+.faixapreta p{
+    color: white;
+    align-self: center;
+    margin-bottom: 3%;
+}
+
+.faixapreta button{
+    color: white;
+    border-color: white;
+    background-color: black;
+    width: 40%;
+}
+
+.filhofaixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 8vh;
+    width: 100%;
+}
+/* Fim do Entenda Contexto */
+
+/* Inicio Pq nos escolher*/
+.Div_PqNosEscolher {
+    background-image: url(../assets/banner45.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 39rem;
+    width: 100%;
+    height: 39rem;
+    z-index: 0;
+    position: relative;
+}
+
+.Tit_PNE {
+    width: 100%;
+    height: 10rem;
+    color: white;
+    font-family: Inter;
+    font-size: 0.75rem;
+    text-align: center;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+}
+
+.titulo h1 {
+    font-size: 30px;
+}
+
+.Tit_PNE h1 {
+    margin-top: 1rem;
+    margin-top: 40px;
+}
+
+.Tit_PNE h3 {
+    margin-top: 1rem;
+    margin-top: 20px;
+}
+
+.Cards_PNE {
+    width: 100%;
+    height: 31rem;
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Cards_PNE .card {
+    width: 20rem;
+    height: 20rem;
+    background-color: #fff;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card img {
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.card h3 {
+    margin-top: 1rem;
+}
+
+.card p {
+    text-align: center;
+    width: 16rem;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+/* fim por que nos escolher */
+
+/* começo equipe */
+.all{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo-equipe{
+    height: 10vh;
+}
+
+.titulo{
+    width: 75% ;
+    height: 128vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ffffffaf solid 1px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 60px;
+    z-index: 999;
+    position: relative;
+}
+
+.titulo h4 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.all-membros{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    justify-content: space-around;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.656);
+    width: 17.3%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* margin-top: 15px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img-membro {
+    background-repeat: no-repeat;
+    width:90%;
+    height: 36vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+    margin-top: 18px;
+}
+
+#anthony {
+    background-image: url('../assets/tonyv3.jpeg');
+}
+
+#yasmin {
+    background-image: url('../assets/yasmin.jpeg');
+}
+
+#davi {
+    background-image: url('../assets/davi.jpeg');
+}
+
+#nunes {
+    background-image: url('../assets/nunes.jpeg');
+}
+
+#sanchez {
+    background-image: url('../assets/sanchez.jpeg');
+}
+
+#maria {
+    background-image: url('../assets/maria.jpeg');
+}
+
+.txt {
+    color: white;
+    text-align: center;
+    margin-top: 280px;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.txt h1{
+   font-weight: 100;
+   
+}
+
+.txt h4{
+    font-weight: 600;
+}
+/* Final da Nossa Equipe */
+
+/* começo do comece conosco */
+.paiComeceConosco {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+    background-image: url(../assets/pitua-sutanto-Bh0d5ZdA5is-unsplash.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.filhoComeceConosco {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.esquerdaComeceConosco {
+    width: 45%;
+    height: 20%;
+}
+
+.boxTextoComeceConosco {
+    width: 45%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pComeceConosco {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#textoComece {
+    text-align: center;
+    color: white;
+}
+
+#botaoComeceConosco {
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13vw;
+    height: 7vh;
+    font-size: 14px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+}
+
+#botaoComeceConosco a {
+    color: white;
+}
+
+#botaoComeceConosco a:hover {
+    color: black;
+}
+
+#botaoComeceConosco:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+}
+/* fim do comece conosco */
+
+/* começo do rodape */
+.maps{
+    z-index: 0;
+    height: 19rem;
+    width: 100%;   
+    object-fit: cover;
+}
+
+.feedbackForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    right: 4%;
+    height: 25.5rem;
+    width: 24rem;
+    bottom: -171.86rem;
+    justify-content: space-around;
+    padding: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.feedbackForm input{
+    border-bottom: 2px solid black;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    outline: none;
+}  
+
+.feedbackForm ::placeholder{
+    padding-left: 0.5rem;
+}
+
+ .enviarMensagem {
+    color:white;
+    font-size: 15px;
+    background-color: black;
+    position:absolute;
+    top: 31rem;
+    left:24rem;
+    z-index:3;
+    height:2rem;
+    width: 10rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+} 
+
+.enviarMensagem:hover {
+    box-shadow: 0px 5px 10px rgb(138, 138, 138);
+    transform: translateY(-7px);
+}
+
+.footer_contatos{
+    display:flex;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    height: 18rem;
+}
+
+.faleConosco {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-decoration: none;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.divIcon {
+    display: flex;
+    padding:20px;
+}
+
+.icon {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 2px;
+    
+}
+
+.links a:hover {
+    font-size: 12px;
+}
+
+.iconFace {
+    display: flex;
+    width: 2rem;
+    height: 2.3rem;
+    padding: 2px;
+    margin-top: -2px;
+}
+
+.copyright {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid gray;
+}
+
+.copyright span{
+    justify-content: space-around;
+    padding: 23px;
+}
+
+#copy{
+    color:#B4B4B4;
+}
+
+.copyright #nocline {
+    height:3rem;
+} 
+/* fim do rodape */
+
+/* parte mobile entenda como trabalhamos */
+@media only screen and (max-width: 600px) {
+.imagemEntenda{
+        height: 35vh;
+        width: 100%;
+    }
+
+.fundoEntenda {
+    height: 45rem;
+}
+        
+.textoEntenda{
+    height: 9rem;
+}
+
+.tituloEntenda {
+    position: relative;
+    top: 80%;
+}
+
+.tituloEntenda p{
+    font-size: 13px;
+}
+
+.subtituloEntenda{
+    position: relative;
+    top: 65%;
+}
+
+.subtituloEntenda p{
+    font-size: 11px;
+}
+
+.divQuadrados {
+    height: 80vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    top: 6.5%;
+}
+
+
+.idDetalhes {
+    font-size: 2.5vw;
+    top: -5%;
+    margin-bottom: 3%;
+}
+
+.botaoSaibaMais {
+    width: 30vw;
+    height: 3vh;
+}
+
+.txtDetalhes{
+    font-size: 0.5rem;
+}
+
+.QuadradoEsquerda{
+    background-size: 100%;
+    height: 25%;
+    width: 65%;
+}
+
+
+.hidden-text {
+    font-size:  0.7rem;
+    margin: 0 !important;
+}
+
+.QuadradoMeio{
+    background-size: 120%;
+    height: 25%;
+    width: 65%;
+}
+
+.hidden-textM {
+    font-size:  0.7rem;  
+}
+
+.QuadradoDireita{
+    background-size: 100%;
+    height: 25%;
+    width: 65%;
+
+}
+
+.hidden-textD {
+    font-size: 0.7rem;
+}
+
+
+.faixapreta{
+    top: 33.5%;
+    height: 8.5vh;
+}
+.faixapretaM{
+    top: 33.5%;
+    height: 8.5vh;
+}
+
+.faixapretaD{
+    top: 33.5%;
+    height: 8.5vh;
+}
+}
+/* fim mobile */
+
+/* banner mobile */
+@media only screen and (max-width: 600px) {
+.paiBanner {
+    height: 18rem !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.divBoxTextoBanner {
+    margin: 0;
+    height: 100%;
+    margin-left: 1rem !important;
+}
+
+.pTituloBanner {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.textoBanner {
+    font-size: 0.55rem;
+    text-align: center;
+}
+
+.divBoxBotaoBanner{
+    height: 10%;
+}
+
+.botaoBanner{
+    width: 55%;
+    height: auto;
+}
+
+.botao1Banner {
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
+    border: 2px #ffffff solid;
+}
+
+span .texto{
+    width: 100%;
+}
+
+.botao2Banner {
+    width: 40%;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 6px;
+}
+}
+
+.titulo{
+    width: 80%;
+    height: 10vh;
+}
+
+.titulo h1 {
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+/* fim do banner mobile */
+
+/* mobile cabeçalho */
+@media only screen and (max-width: 600px) {
+.paiBanner {
+    height: 10rem;
+}
+
+.paiComeceConosco{
+    height: 200px;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.paiCabecalho {
+    width: 95%;
+    margin: auto;
+}
+
+.filhoCabecalho {
+    width: 100%;
+    height: 7vh;
+}
+
+.esquerdaCabecalho {
+    width: 6vw;
+    height: 1vh;
+}
+
+.direitaCabecalho {
+    width: 50vw;
+    height: 7vh;
+}
+
+#imgEsquerdaCabecalho {
+    width: 30vw;
+    height: 3.2vh;
+}
+
+#imgDireitaCabecalho {
+    width: 3vw;
+    height: 2vh;
+}
+
+.filhoComeceConosco {
+    width: 80%;
+    height: 85%;
+
+}
+
+.boxTextoComeceConosco {
+    width: 60%;
+    margin-top: 10%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pComeceConosco {
+    position: relative;
+    right: 25%;
+    width: 280px;
+    font-size: 20px;
+}
+
+#textoComece {
+    text-align: center;
+    color: white;
+}
+
+#botaoComeceConosco {
+    border-radius: 30px;
+    width: 15vw;
+    height: 3vh;
+    font-size: 7px;
+    position: relative;
+    margin-top: 8px;
+}
+
+#botaoComeceConosco a {
+    color: white;
+}
+
+#botaoComeceConosco a:hover {
+    color: black;
+}
+
+#botaoComeceConosco:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    color: black;
+    transform: translateY(-7px);
+}
+}
+/* fim do cabeçalho mobile */
+
+/* mobile rodapé */
+/* rodapé mobile */
+@media screen and (max-width:600px) {
+    .maps{
+       width: 100%;
+       height: 15rem;
+   }
+
+   .rodape{
+       display:flex;
+       flex-direction: column;
+       width: 65vw;
+       height: 65vh;
+   }
+
+   .footer_contatos{
+       display: flex;
+       justify-content: space-around;
+   }
+
+   #email {
+    display: flex;
+    flex-direction: row;
+   }
+   
+   .links{
+       display:flex;
+       justify-content: center;
+       padding: 10px 0 0 0;
+       font-size: 0.8rem;
+       position: relative;
+       left: 40%;
+       top: 15%;
+   }
+
+   .faleConosco{
+    font-size: 0.8rem;
+    margin: 0;
+    position: relative;
+    left: 20%;
+    top: 15%;
+   }
+
+   #faleConosco{
+    font-size: 0.9rem;
+   }
+
+   .iconFaleConosco{
+    font-size: 15px !important;
+   }
+
+   #iconFaleConosco{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+   }
+
+   .divIcon{
+    padding: 15px 0 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   }
+
+   .icon{
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+   }
+
+   .material-symbols-outlined{
+    position: relative;
+    top: 3px;
+   }
+
+   .copyright{
+    width: 100%;
+    justify-content: space-between;
+   }
+
+   #copy{
+    padding:0 0 0 10px;
+    font-size: 0.5rem;
+   } 
+
+   .copyright #nocline{
+    width: 30vw;
+    height: 3.2vh;
+   }
+
+   .feedbackForm {
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+       position: absolute;
+       z-index: 99;
+       right: 10%;
+       height: 8rem;
+       width: 28%;
+       top: 396.9rem;
+       justify-content: space-around;
+       box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 20px 0px, rgba(0, 0, 0, 0.04) 1px 1px 20px 0px;
+       padding: 56.1px ;
+   }
+
+   .feedbackForm h2{
+    font-size: 1.4rem;
+    margin-top: -50px;
+   }
+
+   .feedbackForm input{
+       border-bottom: 2px solid black;
+       border-top: white;
+       border-right: white;
+       border-left: white;
+       outline: none;
+       margin:5px;
+       font-size: 0.6rem;
+   }  
+   
+   .feedbackForm ::placeholder{
+       padding-left: 0.5rem;
+   }
+   
+    .enviarMensagem {
+       color:white;
+       font-size: 8px;
+       background-color: black;
+       position:absolute;
+       top: 12rem;
+       left:4rem;
+       z-index:3;
+       height:1rem;
+       width: 7rem;
+       text-transform: uppercase;
+       border: none;
+       border-radius: 30px;
+       transition: all 0.3s ease 0s;
+       cursor: pointer;
+       outline: none;
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: 600;
+   } 
+   
+   .enviarMensagem:hover {
+       box-shadow: 0px 5px 10px rgb(138, 138, 138);
+       transform: translateY(-7px);
+   }
+    /* fim do rodape */
+}
+
+/* responsivo pq nos escolher */
+@media only screen and (max-width: 600px) {
+    .Div_filtro{
+        height: 53rem !important;
+    }
+
+    .Cards_PNE{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .Cards_PNE .card{
+        margin: auto;
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .card img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .card h3{
+        font-size: 0.9rem;
+    }
+
+    .card p{
+        font-size: 0.75rem;
+    }
+
+    .Tit_PNE{
+        height: auto;
+        font-size: 0.45rem;
+    }
+
+    .Tit_PNE h1 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        position: relative;
+    }
+    
+    .Tit_PNE h3 {
+        margin-top: 1rem;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: -70%;
+        font-size: 0.69rem;
+    }
+
+    .Div_PqNosEscolher {
+        background-image: url(../assets/banner45.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 61rem !important;
+        z-index: 0;
+        position: relative;
+        margin-top: 13%;
+    }
+
+    .Div_PqNosEscolher {
+    width: 100%;
+    height: 85rem;
+    z-index: 0;
+    }
+
+    .card{
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+    }
+    
+    .Div_filtro {
+   
+    height: 78rem;
+
+    }
+}
+/* Fim Pq nos escolher*/
+   
+/* Começo da Nossa Equipe responsivo  */
+@media only screen and (max-width: 600px){
+    .all{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #titulo-equipe{
+        height: 10vh;
+    }
+    
+    .titulo{
+        width: 75% ;
+        height: 128vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #ffffffaf solid 1px;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-bottom: 60px;
+        z-index: 999;
+        position: relative;
+    }
+    
+    .titulo h4 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .all-membros{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height:221vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: -10px;
+
+    }
+    .card{
+        background-color: rgba(0, 0, 0, 0.656);
+        width: 70%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        /* margin-top: 15px; */
+        }
+    
+    .img-membro{
+        background-image: url('../assets/anthony.jpeg');
+        background-repeat: no-repeat;
+        width:90%;
+        height: 38vh;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       background-size: cover;
+        margin-top: 20px;
+    
+    }
+    .txt{
+        color: white;
+        text-align: center;
+        margin-top: 430px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .txt h1{
+       font-weight: 100;
+       
+    }
+    .txt h4{
+        font-weight: 600;
+     }
+    }
+/* fim da equipe */
