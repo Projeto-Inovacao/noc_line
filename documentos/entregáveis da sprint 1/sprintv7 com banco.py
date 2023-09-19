@@ -1,8 +1,8 @@
 import psutil
 import time
 import platform
-from mysql.connector import connect
 import datetime
+from mysql.connector import connect
 
 def mysql_connection(host, user, passwd, database=None):
     connection = connect(

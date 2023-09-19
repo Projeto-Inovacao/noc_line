@@ -1,0 +1,28 @@
+--Criando ambientes virtuais com python (Windows)--
+
+python -m venv <path>
+
+por ex.
+
+python -m venv .\amb
+
+--Inicializando um ambiente virtual--
+
+<path>\Scripts\activate.bat
+-ou-
+<path>\Scripts\activate
+
+por ex.
+
+.\amb\Scripts\activate.bat
+
+
+--Saindo de um ambiente virtual--
+
+<path>\Scripts\deactivate.bat
+-ou-
+<path>\Scripts\deactivate
+
+por ex.
+
+.\amb\Scripts\deactivate.bat
