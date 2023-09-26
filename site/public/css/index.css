@@ -763,6 +763,51 @@ a {
     object-fit: cover;
 }
 
+.notes {
+    position: relative;
+    width: auto;
+    max-width: 300px;
+    min-height: 150px;
+    background: #0e0c0c;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #efe8fa;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+
 .feedbackForm {
     display: flex;
     flex-direction: column;
@@ -815,6 +860,7 @@ a {
 
 .footer_contatos {
     display:flex;
+    padding: 0.3%;
 }
 
 .rodape {
@@ -1224,7 +1270,7 @@ height: 78rem;
     position: relative;
     margin-top: 8px;
 }
-/* fim do comece conosco mobile */
+/* fim do comeco conosco mobile */
 
 /* Comecço rodapé mobile */
 .maps {
